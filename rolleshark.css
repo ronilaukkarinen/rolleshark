@@ -103,7 +103,7 @@ color:#ffffff;
 }
 
 .topframe #query {
-background:url(../icons/sonic_white/search.png) no-repeat 295px 7px #fff;
+background:url(../icons/rolleshark/search.png) no-repeat 295px 7px #fff;
 position: relative;
 display: block;
 width: 284px;
@@ -174,12 +174,12 @@ h2, b, tr {
 
 /* Back image */
 .back {
-    background-image:url( "../icons/sonic_white/back.png" );
+    background-image:url( "../icons/rolleshark/back.png" );
 }
 
 /* Forward image */
 .forward {
-    background-image:url( "../icons/sonic_white/forward.png" );
+    background-image:url( "../icons/rolleshark/forward.png" );
 }
 
 a {
@@ -256,7 +256,7 @@ padding:10px 10px 0 10px;
 
 /*
 .outerpair2 {
-background: url(../icons/sonic_white/jewel.png) 0 0 no-repeat !important;
+background: url(../icons/rolleshark/jewel.png) 0 0 no-repeat !important;
 width: 90px;
 height: 82px;
 }
@@ -271,7 +271,7 @@ left: 12px;
 /* compact disk */
 
 .outerpair2 {
-background: url(../icons/sonic_white/cd.png) 0 0 no-repeat !important;
+background: url(../icons/rolleshark/cd.png) 0 0 no-repeat !important;
 width: 86px;
 height: 86px;
 }
@@ -286,7 +286,7 @@ left: 0px;
 
 /*
 .outerpair2 {
-background: url(../icons/sonic_white/vinyl.png) 0 0 no-repeat !important;
+background: url(../icons/rolleshark/vinyl.png) 0 0 no-repeat !important;
 width: 96px;
 height: 76px;
 }
@@ -333,7 +333,7 @@ color:#ffffff !important;
 }
 
 body.leftframe {
-background:url(../icons/sonic_white/bg.gif);
+background:url(../icons/rolleshark/bg.gif);
 }
 
 select {
@@ -357,4 +357,92 @@ cursor: pointer;
 
 .leftframe select {
 margin:0 0 20px 0;
+}
+
+.mainframe div.bgcolor2 {
+background-color: #303030;
+border-bottom: solid 1px #111;
+z-index: 400;
+background-color: #2c2c2c;
+background-image: -moz-linear-gradient(top, #333333, #222222);
+background-image: -ms-linear-gradient(top, #333333, #222222);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+background-image: -webkit-linear-gradient(top, #333333, #222222);
+background-image: -o-linear-gradient(top, #333333, #222222);
+background-image: linear-gradient(top, #333333, #222222);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+div.bgcolor2 img {
+display:block !important;
+}
+
+input[type=password],input[type=text], textarea {
+    font-family:"Open Sans",arial;
+    display: block;    
+    border-style: solid;    
+    border-width: 1px;    
+    border-color: #dedede;    
+    margin-bottom: 20px;    
+    font-size: 1.2em;    
+    padding: 11px 15px;    
+    width: 90%;    
+    color: #777;    
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;    
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;    
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;    
+    transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;    
+    -webkit-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;    
+    -moz-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;    
+    -o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;    
+}
+
+input[type=password]:focus,input[type=text]:focus, textarea:focus {
+    color: #333;    
+    border-color: #d11226;    
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px #d11226;    
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px #d11226;    
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px #d11226;    
+    outline: 0 none; 
+}
+
+input[type=submit], input[type=button] {
+    width: auto;
+    color: #ffffff;
+    font-size: 14px;
+    font-family:"Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    background: #DD2915;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: inset 0 0 30px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: inset 0 0 30px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 30px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    cursor: pointer;
+    -webkit-transition: background .1s linear;
+    -moz-transition: background .1s linear;
+    -o-transition: background .1s linear;
+    -ms-transition: background .1s linear;
+    transition: background .1s linear;
+    -webkit-transform: translateZ(0);
+    outline: 0;
+}
+
+input[type=button]:hover, input[type=button]:active,input[type=submit]:hover, input[type=submit]:active {
+    color: #fff;
+    background: #EE7F18;
+    -moz-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
 }
