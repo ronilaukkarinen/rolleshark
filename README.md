@@ -2,6 +2,7 @@ RolleShark
 =========================
 
 A very quick yet functional Subsonic theme based on Sonic and inspired by Grooveshark UI.
+Icon-edits and CSS by me, album overlays by Komodo Media.
 
 Prequisites
 --------------
