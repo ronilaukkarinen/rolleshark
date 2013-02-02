@@ -6,6 +6,8 @@ Icon-edits and CSS by me, album overlays by Komodo Media.
 
 Contains a lot of advanced CSS3, therefore works best on Google Chrome.
 
+Coded entirely using Linux command line editor nano :-)
+
 Prequisites
 --------------
 
