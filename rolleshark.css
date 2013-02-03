@@ -337,7 +337,7 @@ position: absolute;
 -o-transition: none !important;
 }
 
-.mainframe #query, .mainframe form:first-child img {
+.mainframe #query, .mainframe form:first-child img, .mainframe form[name=searchForm] {
 display:none;
 }
 
