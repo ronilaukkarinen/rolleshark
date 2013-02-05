@@ -482,10 +482,19 @@ span.on, span.off {
 }
 
 
+.rightframe, .leftframe {
+overflow-x:hidden;
+}
+
+.rightframe {
+padding:0 0 0 5px;
+}
+
 .rightframe #nowPlaying a[rel=zoom] {
 background: url(../icons/rolleshark/jewel.png) 0 0 no-repeat !important;
 width: 90px;
 height: 82px;
+margin:0 6px 0 0;
 }
 
 .rightframe #nowPlaying a[rel=zoom] img {
@@ -513,4 +522,3 @@ position: absolute;
 -moz-transition: none !important;
 -o-transition: none !important;
 }
-
