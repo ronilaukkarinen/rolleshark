@@ -5,7 +5,6 @@ A very quick yet functional Subsonic theme based on Sonic and inspired by Groove
 
 Icon-edits and CSS by me.
 Album overlays by Komodo Media: http://komodomedia.com/
-Mini-icons thanks to Some Random Dude: http://somerandomdude.com/work/iconic/
 
 Contains a lot of advanced CSS3, therefore works best on Google Chrome.
 
