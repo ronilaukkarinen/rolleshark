@@ -522,3 +522,7 @@ position: absolute;
 -moz-transition: none !important;
 -o-transition: none !important;
 }
+
+.rightframe .detail, .rightframe .detailselected {
+white-space: normal;
+}
