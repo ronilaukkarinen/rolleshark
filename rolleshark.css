@@ -404,6 +404,10 @@ div.bgcolor2 img {
 display:block !important;
 }
 
+body, h2, form, label, table, a {
+    font-family:"Open Sans",arial !important;
+}
+
 input[type=password],input[type=text], textarea {
     font-family:"Open Sans",arial;
     display: block;    
