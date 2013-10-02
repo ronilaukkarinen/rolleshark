@@ -255,67 +255,26 @@ font-weight:600;
 padding:10px 10px 0 10px;
 }
 
-/* jewel case: */
-
 /*
-.outerpair2 {
-background: url(../icons/rolleshark/jewel.png) 0 0 no-repeat !important;
-width: 90px;
-height: 82px;
-}
-.innerbox img {
-width: 72px;
-height: 72px;
-top: 3px;
-left: 12px;
-}
+
+You can change the cover artwork style by just commenting out one of these lines below.
+The commented
+
 */
 
-/* compact disk */
-
-.outerpair2 {
-background: url(../icons/rolleshark/cd.png) 0 0 no-repeat !important;
-width: 86px;
-height: 86px;
-}
-.innerbox img {
-width: 82px;
-height: 82px;
-top: 0px;
-left: 0px;
-}
-
-/* jewel case: hover */
-
-/*
-.outerpair1:hover .outerpair2 {
-background: url(../icons/rolleshark/jewel.png) 0 0 no-repeat !important;
-width: 90px;
-height: 82px;
-}
-.outerpair1:hover .innerbox img {
-width: 72px;
-height: 72px;
-top: 3px;
-left: 12px;
-}
+/* ------- jewel case: ------- */
+/* .outerpair2 { background: url(../icons/rolleshark/jewel.png) 0 0 no-repeat !important; width: 90px; height: 82px; } .innerbox img { width: 72px; height: 72px; top: 3px; left: 12px; }
 */
 
-/* vinyl: hover */
-
-/*
-.outerpair1:hover .outerpair2 {
-background: url(../icons/rolleshark/vinyl.png) 0 0 no-repeat !important;
-width: 96px;
-height: 76px;
-}
-.outerpair1:hover .innerbox img {
-width: 72px;
-height: 72px;
-top: 1px;
-left: 2px;
-}
+/* ------- compact disk ------- */
+/* .outerpair2 { background: url(../icons/rolleshark/cd.png) 0 0 no-repeat !important; width: 86px; height: 86px; } .innerbox img { width: 82px; height: 82px; top: 0px; left: 0px; }
 */
+
+/* ------- vinyl ------- */
+.outerpair2 { background: url(../icons/rolleshark/vinyl.png) 0 0 no-repeat !important; width: 96px; height: 76px; } .outerpair1 .innerbox img { width: 72px; height: 72px; top: 1px; left: 2px; }
+
+
+/* Don't comment out anything below this! */
 
 .outerpair2 {
 display: block;
