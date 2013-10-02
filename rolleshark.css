@@ -1,13 +1,53 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
 
 /*
- * CSS styleshet for the "Rolleshark" theme. Based on Sonic White. Inspired by Grooveshark.
+ * Subsonic/Musiccabinet CSS for the "Rolleshark" theme. Based on Sonic White. Inspired by Grooveshark.
  *
  * Author: Roni "Rolle" Laukkarinen (roni.laukkarinen[at]gmail.com)
  *
  */
 
 @import "sonic.css";
+
+/*
+
+You can change the cover artwork style by just commenting out one of these lines below.
+The commented
+
+*/
+
+/* ALBUM BROWSER VIEW: */
+
+/* ------- jewel case: ------- */
+/* .outerpair2 { background: url(../icons/rolleshark/jewel.png) 0 0 no-repeat !important; width: 90px; height: 82px; } .innerbox img { width: 72px; height: 72px; top: 3px; 
+left: 12px; }
+*/
+/* ------- compact disk ------- */
+/* .outerpair2 { background: url(../icons/rolleshark/cd.png) 0 0 no-repeat !important; width: 86px; height: 86px; } .innerbox img { width: 82px; height: 82px; top: 0px; left: 
+0px; }
+*/
+/* ------- vinyl ------- */
+.outerpair2 { background: url(../icons/rolleshark/vinyl.png) 0 0 no-repeat !important; width: 96px; height: 76px; } .outerpair1 .innerbox img { width: 72px; height: 72px; top: 
+1px; left: 2px; }
+
+/* RIGHT SIDEBAR "NOW PLAYING" VIEW: */
+
+/* ------- jewel case ------- */
+/*.rightframe #nowPlaying a[rel=zoom] { background: url(../icons/rolleshark/jewel.png) 0 0 no-repeat !important; width: 90px; height: 82px; } .rightframe #nowPlaying 
+a[rel=zoom] img { width: 72px; height: 72px; top: 3px; left: 12px; }
+*/
+/* ------- compact disk ------- */
+/*.rightframe #nowPlaying a[rel=zoom] { background: url(../icons/rolleshark/cd.png) 0 0 no-repeat !important; width: 86px; height: 86px; } .rightframe #nowPlaying a[rel=zoom] 
+img { width: 82px; height: 82px; top: 0px; left: 0px; }
+*/
+/* ------- vinyl ------- */
+.rightframe #nowPlaying a[rel=zoom] { background: url(../icons/rolleshark/vinyl.png) 0 0 no-repeat !important; width: 96px; height: 76px; } .rightframe #nowPlaying a[rel=zoom] 
+img { width: 72px; height: 72px; top: 1px; left: 2px; }
+
+
+/*******************************************/
+
+/* Don't edit anything below this! */
 
 a, a:link, a:visited, a img, input[type=submit] {
     -webkit-transition: all 0.22s ease-out;
@@ -224,21 +264,105 @@ label, p {
     background: rgba(200, 200, 200, 0.2);
 }
 
-.outerpair2 #bioArt {
+#bio0 {
+display:block !important;
+min-height:90px !important;
+padding-top:10px !important;
+padding-left:0 !important;
+width:700px !important;
+}
+
+#bio1 {
+display:none !important;
+}
+
+.mainframe {
+overflow-x:hidden !important;
+}
+
+body.mainframe.bgcolor1 div table tbody tr td div.outerpair1 {
+min-height:115px !important;
+min-width:140px !important;
+}
+
+body.mainframe.bgcolor1 div table tbody tr td div[style=detail] div {
+margin-left:16px !important;
+position:relative;
+float:none !important;
+padding-left:10px;
+}
+
+body.mainframe.bgcolor1 div table tbody tr td div[style=detail] div a {
+overflow:hidden;
+float:left;
+}
+
+body.mainframe.bgcolor1 div table tbody tr td div[style=detail] img {
+position:absolute;
+left:-10px;
+top:-16px;
+}
+
+body.mainframe.bgcolor1 div table tbody tr td div.outerpair1 div.outerpair2 {
+background:none transparent !important;
+}
+
+body.mainframe.bgcolor1 div table tbody tr td div.outerpair1 a {
+padding-left:5px !important;
+}
+
+body.mainframe.bgcolor1 div table tbody tr td div.outerpair1 div.outerpair2 div.shadowbox, body.mainframe.bgcolor1 div table tbody tr td a div.outerpair1
+div.outerpair2 div.shadowbox {
+position: absolute;
+top: 0;
+left: 0;
+display: block;
+width: 132px;
+height: 109px;
+background: url(http://cdn.lst.fm/flatness/picture_frame.png) left top transparent !important;
+}
+
+body.mainframe.bgcolor1 div table tbody tr td div.outerpair1 div.outerpair2 div.shadowbox div.innerbox a, body.mainframe.bgcolor1 div table tbody tr td a div.outerpair1 
+div.outerpair2 div.shadowbox div.innerbox {
+position: absolute !important;
+top: 2px !important;
+left: 3px !important;
+padding:0 !important;
+display: block !important;
+width: 126px !important;
+height: 100px !important;
+overflow: hidden !important;
+}
+
+body.mainframe.bgcolor1 div table tbody tr td div.outerpair1 div.outerpair2 div.shadowbox div.innerbox {
+top:0 !important;
+left:0 !important;
+}
+
+.outerpair2 #bioArt, body.mainframe.bgcolor1 div table tbody tr td a div.outerpair1 div.outerpair2 div.shadowbox div.innerbox img {
+cursor:default !important;
 box-shadow:none !important;
 -webkit-box-shadow:none !important;
-padding: 5px !important;
-background: #fff;
-border: solid 1px #ccc !important;
-width:90px !important;
-margin:-9px 0 0 -9px;
-left:0;
-top:0;
-height:90px !important;
+padding: 0 !important;
+border: 0 !important;
+width:126px !important;
+margin:0 0 15px 0 !important;
+left:0 !important;
+top:0 !important;
+height:126px !important;
 z-index:100 !important;
 position:relative;
 display:block;
 }
+
+a#all, a#togglePlayAdd {
+margin-left:10px !important;
+}
+
+#alb1 {
+margin-top:15px !important;
+}
+
 
 .shadowbox, .outerpair1 {
 background:none !important;
@@ -254,27 +378,6 @@ font-weight:600;
 .outerpair1 {
 padding:10px 10px 0 10px;
 }
-
-/*
-
-You can change the cover artwork style by just commenting out one of these lines below.
-The commented
-
-*/
-
-/* ------- jewel case: ------- */
-/* .outerpair2 { background: url(../icons/rolleshark/jewel.png) 0 0 no-repeat !important; width: 90px; height: 82px; } .innerbox img { width: 72px; height: 72px; top: 3px; left: 12px; }
-*/
-
-/* ------- compact disk ------- */
-/* .outerpair2 { background: url(../icons/rolleshark/cd.png) 0 0 no-repeat !important; width: 86px; height: 86px; } .innerbox img { width: 82px; height: 82px; top: 0px; left: 0px; }
-*/
-
-/* ------- vinyl ------- */
-.outerpair2 { background: url(../icons/rolleshark/vinyl.png) 0 0 no-repeat !important; width: 96px; height: 76px; } .outerpair1 .innerbox img { width: 72px; height: 72px; top: 1px; left: 2px; }
-
-
-/* Don't comment out anything below this! */
 
 .outerpair2 {
 display: block;
@@ -453,20 +556,6 @@ padding:0 0 0 5px;
 }
 
 .rightframe #nowPlaying a[rel=zoom] {
-background: url(../icons/rolleshark/jewel.png) 0 0 no-repeat !important;
-width: 90px;
-height: 82px;
-margin:0 6px 0 0;
-}
-
-.rightframe #nowPlaying a[rel=zoom] img {
-width: 72px;
-height: 72px;
-top: 3px;
-left: 12px;
-}
-
-.rightframe #nowPlaying a[rel=zoom] {
 display: block;
 position: relative;
 text-indent: -1000em;
@@ -488,3 +577,4 @@ position: absolute;
 .rightframe .detail, .rightframe .detailselected {
 white-space: normal;
 }
+
