@@ -339,8 +339,11 @@ top:0 !important;
 left:0 !important;
 }
 
+.outerpair2 #bioArt {
+cursor:default;
+}
+
 .outerpair2 #bioArt, body.mainframe.bgcolor1 div table tbody tr td a div.outerpair1 div.outerpair2 div.shadowbox div.innerbox img {
-cursor:default !important;
 box-shadow:none !important;
 -webkit-box-shadow:none !important;
 padding: 0 !important;
