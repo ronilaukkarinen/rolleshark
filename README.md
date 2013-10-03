@@ -19,8 +19,9 @@ Prequisites
 Installation (Linux)
 --------------
 
-git clone this repository, navigate to folder and then input these commands:
+git clone this repository, navigate to folder (`cd /path/to/files`) and then input these commands:
 
 	sudo cp rolleshark.css /var/subsonic/jetty/<version>/webapp/style/
 	sudo cp -R icons/rolleshark /var/subsonic/jetty/<version>/webapp/icons/
+	sudo cp -R webfonts /var/subsonic/jetty/<version>/webapp/
 	sudo cp -R WEB-INF /var/subsonic/jetty/<version>/webapp/
