@@ -591,6 +591,14 @@ white-space: normal;
 div.bgcolor2 { z-index:10 !important;
 }
 
+body.mainframe div[style] {
+padding:0 !important;
+}
+
+body.mainframe {
+padding:15px !important;
+}
+
 /* modified checkboxes */
 
 input[type=checkbox] {
