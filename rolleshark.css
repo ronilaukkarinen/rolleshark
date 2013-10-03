@@ -468,6 +468,10 @@ div.bgcolor2 img {
 display:block !important;
 }
 
+div.bgcolor2 table {
+margin:0 !important;
+}
+
 body, h1, h2, form, label, table, a {
     font-family:"Open Sans",arial !important;
 }
@@ -602,6 +606,18 @@ padding:0 15px 15px 0 !important;
 
 body.mainframe {
 padding:15px !important;
+}
+
+body.mainframe.bgcolor1 div div div div table {
+margin-bottom:20px;
+}
+
+table {
+margin:0 0 2em 0;
+}
+
+body.mainframe.bgcolor1 table tbody tr td div:first-child {
+border:0 !important;
 }
 
 /* modified checkboxes */
