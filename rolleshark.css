@@ -288,7 +288,7 @@ body.mainframe.bgcolor1 div table tbody tr td div[style=detail] div {
 margin-left:16px !important;
 position:relative;
 float:none !important;
-padding-left:10px;
+padding-left:10px !important;
 }
 
 body.mainframe.bgcolor1 div table tbody tr td div[style=detail] div a {
@@ -594,6 +594,11 @@ div.bgcolor2 { z-index:10 !important;
 body.mainframe div[style] {
 padding:0 !important;
 }
+
+body.mainframe div[style].detail {
+padding:0 15px 15px 0 !important;
+}
+
 
 body.mainframe {
 padding:15px !important;
