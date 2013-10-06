@@ -321,8 +321,8 @@ position:relative;
 
 .playtop {
 position: absolute !important;
-left: 4px !important;
-top: 0px !important;
+left: 5px !important;
+top: -1px !important;
 }
 
 body.mainframe.bgcolor1 div table tbody tr td div[style=detail] img {
