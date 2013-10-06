@@ -295,12 +295,20 @@ float:none !important;
 padding-left:10px !important;
 }
 
-.artist div[style="width:108px;float:left"] {
-margin-left:25px !important;
+body.mainframe.bgcolor1 div table tbody tr td div a div[style="width:108px;float:left"] {
+margin-left:16px !important;
 position:relative;
 float:none !important;
 padding-left:10px !important;
 }
+
+body.mainframe.bgcolor1 table tbody tr td table tbody tr td div a.artist div[style="width:108px;float:left"] {
+margin-left:16px !important;
+position:relative;
+float:none !important;
+padding-left:10px !important;
+}
+
 
 body.mainframe.bgcolor1 div table tbody tr td div[style=detail] div a {
 overflow:hidden;
@@ -312,15 +320,15 @@ position:relative;
 }
 
 .playtop {
-position: absolute;
-left: 4px;
-top: 0px;
+position: absolute !important;
+left: 4px !important;
+top: 0px !important;
 }
 
 body.mainframe.bgcolor1 div table tbody tr td div[style=detail] img {
-position:absolute;
-left:-10px;
-top:-16px;
+position: absolute;
+left: 5px;
+top: 0;
 }
 
 body.mainframe.bgcolor1 div table tbody tr td div.outerpair1 div.outerpair2, .artist div.outerpair1 div.outerpair2 {
