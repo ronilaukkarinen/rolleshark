@@ -25,4 +25,4 @@ git clone this repository, navigate to folder (`cd /path/to/files`) and then inp
 	sudo cp -R icons/rolleshark /var/subsonic/jetty/<version>/webapp/icons/
 	sudo cp -R webfonts /var/subsonic/jetty/<version>/webapp/
 	sudo cp -R WEB-INF /var/subsonic/jetty/<version>/webapp/
-        sudo cp -R script /var/subsonic/jetty/<version>/webapp/
+	sudo cp -R script /var/subsonic/jetty/<version>/webapp/
