@@ -283,13 +283,20 @@ display:none !important;
 overflow-x:hidden !important;
 }
 
-body.mainframe.bgcolor1 div table tbody tr td div.outerpair1 {
+body.mainframe.bgcolor1 div table tbody tr td div.outerpair1, .artist div.outerpair1 {
 min-height:115px !important;
 min-width:140px !important;
 }
 
-body.mainframe.bgcolor1 div table tbody tr td div[style=detail] div {
+ody.mainframe.bgcolor1 div table tbody tr td div[style=detail] div {
 margin-left:16px !important;
+position:relative;
+float:none !important;
+padding-left:10px !important;
+}
+
+.artist div[style="width:108px;float:left"] {
+margin-left:25px !important;
 position:relative;
 float:none !important;
 padding-left:10px !important;
@@ -300,13 +307,23 @@ overflow:hidden;
 float:left;
 }
 
+div[style=detail] {
+position:relative;
+}
+
+.playtop {
+position: absolute;
+left: 4px;
+top: 0px;
+}
+
 body.mainframe.bgcolor1 div table tbody tr td div[style=detail] img {
 position:absolute;
 left:-10px;
 top:-16px;
 }
 
-body.mainframe.bgcolor1 div table tbody tr td div.outerpair1 div.outerpair2 {
+body.mainframe.bgcolor1 div table tbody tr td div.outerpair1 div.outerpair2, .artist div.outerpair1 div.outerpair2 {
 background:none transparent !important;
 }
 
@@ -315,7 +332,7 @@ padding-left:5px !important;
 }
 
 body.mainframe.bgcolor1 div table tbody tr td div.outerpair1 div.outerpair2 div.shadowbox, body.mainframe.bgcolor1 div table tbody tr td a div.outerpair1
-div.outerpair2 div.shadowbox {
+div.outerpair2 div.shadowbox, .artist div.outerpair1 div.outerpair2 div.shadowbox {
 position: absolute;
 top: 0;
 left: 0;
@@ -326,7 +343,7 @@ background: url(../icons/rolleshark/picture_frame.png) left top transparent !imp
 }
 
 body.mainframe.bgcolor1 div table tbody tr td div.outerpair1 div.outerpair2 div.shadowbox div.innerbox a, body.mainframe.bgcolor1 div table tbody tr td a div.outerpair1 
-div.outerpair2 div.shadowbox div.innerbox {
+div.outerpair2 div.shadowbox div.innerbox, .artist div.outerpair1 div.outerpair2 div.shadowbox div.innerbox {
 position: absolute !important;
 top: 2px !important;
 left: 3px !important;
@@ -346,7 +363,7 @@ left:0 !important;
 cursor:default;
 }
 
-.outerpair2 #bioArt, body.mainframe.bgcolor1 div table tbody tr td a div.outerpair1 div.outerpair2 div.shadowbox div.innerbox img {
+.outerpair2 #bioArt, body.mainframe.bgcolor1 div table tbody tr td a div.outerpair1 div.outerpair2 div.shadowbox div.innerbox img, .artist div.outerpair1 div.outerpair2 div.shadowbox div.innerbox img {
 box-shadow:none !important;
 -webkit-box-shadow:none !important;
 padding: 0 !important;
