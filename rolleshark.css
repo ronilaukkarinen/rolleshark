@@ -322,7 +322,7 @@ left: 0;
 display: block;
 width: 132px;
 height: 109px;
-background: url(http://cdn.lst.fm/flatness/picture_frame.png) left top transparent !important;
+background: url(../icons/rolleshark/picture_frame.png) left top transparent !important;
 }
 
 body.mainframe.bgcolor1 div table tbody tr td div.outerpair1 div.outerpair2 div.shadowbox div.innerbox a, body.mainframe.bgcolor1 div table tbody tr td a div.outerpair1 
