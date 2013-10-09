@@ -371,7 +371,7 @@ left:0 !important;
 cursor:default;
 }
 
-.outerpair2 #bioArt, body.mainframe.bgcolor1 div table tbody tr td a div.outerpair1 div.outerpair2 div.shadowbox div.innerbox img, .artist div.outerpair1 div.outerpair2 div.shadowbox div.innerbox img {
+.outerpair2 #bioArt, body.mainframe.bgcolor1 div table tbody tr td a div.outerpair1 div.outerpair2 div.shadowbox div.innerbox img, .artist div.outerpair1 div.outerpair2 div.shadowbox div.innerbox img, body.mainframe.bgcolor1 div table tbody tr td div.outerpair1 div.outerpair2 div.shadowbox div.innerbox a img {
 box-shadow:none !important;
 -webkit-box-shadow:none !important;
 padding: 0 !important;
@@ -706,3 +706,5 @@ input[type=checkbox]:checked + label:after {
 	filter: alpha(opacity=100);
 	opacity: 1;
 }
+
+a[href="donate.view"] { display:none !important; }
