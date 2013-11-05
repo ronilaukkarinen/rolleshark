@@ -708,5 +708,5 @@ input[type=checkbox]:checked + label:after {
 }
 
 a[href="donate.view"] { display:none !important; }
-body.mainframe form { margin:-25px !important; }
-body.mainframe form div.bgcolor2 { background:#121212 !important; padding:20px 0 40px 0 !important; }
+body.mainframe form[action="/j_spring_security_check"] { margin:-25px !important; }
+body.mainframe form div.bgcolor2[style="border:1px solid black; padding:20px 50px 20px 50px; margin-top:100px"] { background:#121212 !important; padding:20px 0 40px 0 !important; }
