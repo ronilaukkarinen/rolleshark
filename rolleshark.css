@@ -26,8 +26,17 @@ left: 12px; }
 0px; }
 */
 /* ------- vinyl ------- */
-.outerpair2 { background: url(../icons/rolleshark/vinyl.png) 0 0 no-repeat !important; width: 96px; height: 76px; } .outerpair1 .innerbox img { width: 72px; height: 72px; top: 
-1px; left: 2px; }
+
+/*
+.outerpair2 { background: url(../icons/rolleshark/vinyl.png) 0 0 no-repeat !important; width: 96px; height: 76px; }
+.outerpair1 .innerbox img { width: 72px; height: 72px; top: 1px; left: 2px; }
+*/
+
+/* vinyl large */
+
+.outerpair2 { background: url(../icons/rolleshark/vinyl_large.png) 0 0 no-repeat !important; width: 200px; height: 160px; }
+.outerpair1 .innerbox img { width: 149px; height: 149px; top: 1px; left: 2px; }
+html body.mainframe div div div .detail[style="float: right; padding-right: 10px; padding-bottom: 15px; text-align: right;"] { margin-right:60px !important;  }
 
 /* RIGHT SIDEBAR "NOW PLAYING" VIEW: */
 
@@ -333,6 +342,8 @@ top: 0;
 
 body.mainframe.bgcolor1 div table tbody tr td div.outerpair1 div.outerpair2, .artist div.outerpair1 div.outerpair2 {
 background:none transparent !important;
+height:110px !important;
+width:132px !important;
 }
 
 body.mainframe.bgcolor1 div table tbody tr td div.outerpair1 a {
@@ -710,3 +721,8 @@ input[type=checkbox]:checked + label:after {
 a[href="donate.view"] { display:none !important; }
 body.mainframe form[action="/j_spring_security_check"] { margin:-25px !important; }
 body.mainframe form div.bgcolor2[style="border:1px solid black; padding:20px 50px 20px 50px; margin-top:100px"] { background:#121212 !important; padding:20px 0 40px 0 !important; }
+
+html body.mainframe div table tbody tr td div.outerpair1:first-child > div.outerpair2 {
+height:110px !important;
+width:132px !important;
+}
