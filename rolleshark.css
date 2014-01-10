@@ -35,7 +35,7 @@ left: 12px; }
 /* vinyl large */
 
 .outerpair2 { background: url(../icons/rolleshark/vinyl_large5.png) 0 0 no-repeat !important; width: 200px; height: 160px; }
-.outerpair1 .innerbox img { width: 149px; height: 149px; top: 1px; left: 2px; }
+.outerpair1 .innerbox img { width: 149px; height: 149px; top: 2px; left: 2px; }
 html body.mainframe div div div .detail[style="float: right; padding-right: 10px; padding-bottom: 15px; text-align: right;"] { margin-right:60px !important;  }
 
 /* RIGHT SIDEBAR "NOW PLAYING" VIEW: */
