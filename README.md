@@ -1,6 +1,11 @@
 RolleShark
 =========================
 
+Designed to be the most beautiful Subsonic theme in the world.
+--------------
+
+![Screenshot (Subsonic powered by Fluid App)](https://raw.githubusercontent.com/ronilaukkarinen/rolleshark-subsonic-theme/master/screenshot.png "Screenshot")
+
 A very quick yet functional Subsonic theme based on Sonic and inspired by Grooveshark UI. Icon-edits and CSS by me.
 
 Code may be crappy, because was forced to use pseudo-selectors and other half-witted gum, because I wanted to respect the function of Subsonic themes by not touching the backend even it frustrates me that it consists mostly of old school HTML code (=tables). But it works and that's all that matters.
