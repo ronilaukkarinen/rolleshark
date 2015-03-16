@@ -3,7 +3,7 @@ RolleShark
 
 A very quick yet functional Subsonic theme based on Sonic and inspired by Grooveshark UI. Icon-edits and CSS by me.
 
-Code may be crappy, because was forced to use pseudo-selectors and other half-witted gum, because I wanted to respect the function of Subsonic themes by not touching the backend even it frustrates me that it consists mostly of old school HTML code (=tables). But it works and that's all that matters.
+Code may be crappy, because was forced to use pseudo-selectors and other half-witted gum, because I wanted to respect the function of Subsonic themes by not touching the backend even it frustrates me that it consists mostly of old school HTML code (=tables). But it works and that's all that matters. Because of the old backend, there won't be a responsive version. For mobile, use Android/iPhone apps or [Jamstash](http://jamstash.com).
 
 Contains a lot of advanced CSS3, therefore works best on latest Google Chrome. Coded entirely using Linux command line editor nano :-)
 
