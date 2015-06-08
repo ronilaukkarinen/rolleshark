@@ -1,0 +1,252 @@
+/*
+ * CSS styleshet for the "Sonic" theme.
+ *
+ * Author: Thomas Bruce Dyrud (thomasbrucedyrud[at]gmail.com)
+ *
+ */
+
+/* The primary background colour. */
+.bgcolor1 {
+    background-color: #e7e7e7;
+}
+
+/* The secondary background colour, light blue, primary theme colour. */
+.bgcolor2, .ruleTableHeader, .log {
+    background-color: #e7e7e7;
+    color: #696969;
+}
+
+/* Background colour for selected header, log etc. */
+.headerSelected {
+    color: #696969;
+    background-color: #e7e7e7;
+    border: 1px solid #696969;
+}
+
+
+/* The primary foreground color (black). */
+body {
+    color: #696969;
+    background-color: #DDDDDD;
+}
+
+/* The secondary foreground colour used for h1, details etc. */
+h1, .detail {
+    color: #696969;
+}
+
+/* Foreground colour used for h2, bold and tr. */
+h2, b, tr {
+    color: #696969;
+}
+
+/* Table sizing */
+table {
+    margin: 0 0 0 0;
+}
+
+/* Main frame image & colour */
+.mainframe {
+    background-color: #e7e7e7;
+}
+
+/* Back image */
+.back {
+    background-image:url( "../icons/sonic/back.png" );
+}
+
+/* Forward image */
+.forward {
+    background-image:url( "../icons/sonic/forward.png" );
+}
+
+
+/* Link colour */
+a:link, a:active, a:visited, a:link *, a:active *, a:visited * {
+    color: #333333;
+}
+
+/* Link hover colour */
+a:hover, a:hover * {
+    text-decoration: underline;
+    color: #696969;
+}
+
+/* Colour for warning messages. */
+.warning {
+    color: #e7238b;
+}
+
+html {
+    background-color: transparent;
+}
+
+label, p {
+	color: #696969;
+}
+
+/* Simple dark border. */
+.border1, .ruleTableHeader, .ruleTableCell, .headerSelected, .log {
+    border: 1px solid black;
+}
+
+/* Font 1 */
+body, h2, form, label, table, a {
+    font-family: verdana, arial, sans-serif;
+}
+
+/* Font 2 */
+h1, h1 a, .logo {
+    font-family: arial, sans-serif;
+}
+
+/***************************************************************************************
+ * The rest of the CSS is typically not changed in other themes (but not necessarily so).
+ ***************************************************************************************/
+
+body {
+    padding:0;
+    border:0;
+    margin:0.75em;
+    font-size: 9pt;
+    line-height: 1.5em;
+}
+
+p {
+    padding:0;
+    border:0;
+    margin:0 0 1em 0;
+}
+
+.dense {
+    white-space: nowrap;
+    margin: 0;
+    line-height: 1.3em
+}
+
+h1 {
+    white-space: nowrap;
+    font-size: 140%;
+    padding: 0 0 0.2em 0;
+    border: 0;
+    margin: 0;
+}
+
+h2 {
+    white-space: nowrap;
+    font-size: 100%;
+    margin: 1em 0 0.2em 0;
+}
+
+form {
+    font-size: 100%;
+    line-height: 140%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+input, select, textarea {
+    font-size: 9pt;
+}
+
+label {
+    font-size: 100%;
+    line-height: 140%;
+}
+
+table {
+    font-size: 100%;
+    line-height: 140%;
+    padding: 0;
+    border: 0;
+    margin: 0 0 0.4em 0;
+}
+
+/* Table with some white space above it.*/
+table.indent {
+    margin: 1em 0 0.4em 0;
+}
+
+a {
+    font-size: 100%;
+    text-decoration: none
+}
+
+img {
+    border-style: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.headerSelected {
+    padding: 0.25em;
+}
+
+.detail, .detailSelected {
+    white-space: nowrap;
+    font-size: 8pt;
+    line-height: 1.25em;
+}
+
+.detailSelected {
+    font-weight: bold;
+}
+
+.warning {
+    white-space: nowrap;
+}
+
+.logo {
+    white-space: nowrap;
+    font-size: 16pt;
+}
+
+.back, .forward {
+    background-position:center left;
+    background-repeat:no-repeat;
+    padding-left: 16px;
+    line-height: 16px;
+}
+
+.back {
+    background-image:url("../icons/back.gif");
+}
+
+.forward {
+    background-image:url("../icons/forward.gif");
+}
+
+.log {
+    white-space: nowrap;
+    font-size: 8pt;
+    line-height: 1em;
+}
+
+.checkbox {
+}
+
+/* Table with simple lines between the cells. */
+.ruleTable {
+    border-collapse: collapse;
+}
+
+.ruleTableHeader, .ruleTableCell {
+    margin: 5px;
+    padding: 5px;
+}
+
+.ruleTableHeader {
+    font-weight: bold;
+}
+
+.ruleTableHeader, .ruleTableCell {
+    margin: 5px;
+    padding: 5px;
+}
+
+.ruleTableHeader {
+    font-weight: bold;
+}
