@@ -17,8 +17,7 @@
     "gulp-concat": "2.5.2",
     "gulp-header": "1.2.2",
     "require-dir": "^0.3.0",
-    "run-sequence": "1.1.0",
-    "bower": "1.4.1"
+    "run-sequence": "1.1.0"
   },
   "dependencies": {
     "backbone": "~1.2.1",

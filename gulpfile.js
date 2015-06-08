@@ -91,7 +91,7 @@ gulp.task('setWatch', function() {
 });
 
 gulp.task('watch', ['setWatch'], function() {
-  gulp.watch(sassSrc, ['styles']);
+  gulp.watch('rolleshark.scss', ['styles']);
 });
 
 /* 
@@ -111,7 +111,7 @@ DEFAULT
 gulp.task('default', function(cb) {
     runSequence(
     'styles',
-    'watch'
+    'watch',
     cb
     );
 });
