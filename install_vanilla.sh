@@ -1,0 +1,1 @@
+sudo cp rolleshark.css /var/subsonic/jetty/4427/webapp/style/ && sudo cp -R icons/rolleshark /var/subsonic/jetty/4427/webapp/icons/ && sudo cp -R webfonts /var/subsonic/jetty/4427/webapp/ && sudo cp -R WEB-INF_vanilla/* /var/subsonic/jetty/4427/webapp/WEB-INF && sudo cp -R script /var/subsonic/jetty/4427/webapp/
