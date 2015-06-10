@@ -25,4 +25,20 @@ git clone this repository, navigate to folder (`cd /path/to/files`) and then inp
 
 **Note: Might override other theme files, so use with care!**
 
+##### Subsonic (Vanilla) 5.2.1:
+
+1. Run this command:
+
+    sudo cp rolleshark.css /var/subsonicvanilla/jetty/4427/webapp/style/ && sudo cp -R icons/rolleshark /var/subsonicvanilla/jetty/4427/webapp/icons/ && sudo cp -R webfonts /var/subsonicvanilla/jetty/4427/webapp/ && sudo cp -R WEB-INF_vanilla/* /var/subsonicvanilla/jetty/4427/webapp/WEB-INF && sudo cp -R script /var/subsonicvanilla/jetty/4427/webapp/
+
+2. Kill subsonic process and start it again
+3. Go to Settings and apply RolleShark
+
+##### MusicCabinet 0.7.24c:
+
+1. Run this command:
+
 	sudo cp rolleshark.css /var/subsonic/jetty/0.7.24c/webapp/style/ && sudo cp -R icons/rolleshark /var/subsonic/jetty/0.7.24c/webapp/icons/ && sudo cp -R webfonts /var/subsonic/jetty/0.7.24c/webapp/ && sudo cp -R WEB-INF /var/subsonic/jetty/0.7.24c/webapp/ && sudo cp -R script /var/subsonic/jetty/0.7.24c/webapp/
+
+2. Kill subsonic process and start it again
+3. Go to Settings and apply RolleShark
