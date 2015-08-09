@@ -863,11 +863,35 @@ body > div[style='width:15em;float:right;padding:0 1em 0 1em;border-left:1px sol
     border: 0 !important;
 }
 .coverart {
-    width: 170px;
+    width: 220px !important;
+    max-width: 220px !important;
     min-height: 250px;
     overflow: hidden;
     float: left;
+
+    div[style='width:160px;max-width:160px;height:160px;max-height:160px;cursor:pointer'] {
+
+            width: 200px !important;
+            max-width: 200px !important;
+            height: 160px !important;
+            overflow: hidden !important;
+            background: url(../icons/rolleshark/vinyl_large5.png) 0 0 no-repeat !important;
+
+            a {
+                img
+                {
+                    top: 2px;
+                    left: 2px; 
+            
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+
+    }
+
 }
+
 body > div[style='width:15em;float:right;padding:0 1em 0 1em;border-left:1px solid #333333'] {
     min-height: 800px;
 }
