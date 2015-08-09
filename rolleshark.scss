@@ -867,3 +867,12 @@ body > div[style='width:15em;float:right;padding:0 1em 0 1em;border-left:1px sol
     padding-left: 20px !important;
     border: 0 !important;
 }
+.coverart {
+    width: 170px;
+    min-height: 250px;
+    overflow: hidden;
+    float: left;
+}
+body > div[style='width:15em;float:right;padding:0 1em 0 1em;border-left:1px solid #333333'] {
+    min-height: 800px;
+}
