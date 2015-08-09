@@ -866,7 +866,6 @@ body > div[style='width:15em;float:right;padding:0 1em 0 1em;border-left:1px sol
     width: 220px !important;
     max-width: 220px !important;
     min-height: 250px;
-    overflow: hidden;
     float: left;
 
     div[style='width:160px;max-width:160px;height:160px;max-height:160px;cursor:pointer'] {
@@ -907,5 +906,26 @@ body > div[style='width:15em;float:right;padding:0 1em 0 1em;border-left:1px sol
                 opacity: 1;
             }
         }
+    }
+}
+
+td[style='vertical-align:top;width:160px'] {
+    display: none !important;
+}
+
+div[style='padding-top:6px;text-align:right'] {
+    position: relative;
+    bottom: 15px;
+    white-space: nowrap;
+
+    a {
+        white-space: nowrap;
+        padding: 0;
+    }
+}
+
+a[rel='zoom'] {
+    img {
+        margin-top: 10px;
     }
 }
