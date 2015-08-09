@@ -876,3 +876,17 @@ body > div[style='width:15em;float:right;padding:0 1em 0 1em;border-left:1px sol
 body > div[style='width:15em;float:right;padding:0 1em 0 1em;border-left:1px solid #333333'] {
     min-height: 800px;
 }
+
+.topframe {
+    background-image: none !important;
+
+    td {
+        a {
+            opacity: 0.7;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
