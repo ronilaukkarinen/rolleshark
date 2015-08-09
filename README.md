@@ -20,10 +20,16 @@ Prequisites
 - Subsonic / musiccabinet
 - Sonic White -theme
 
+Best compatibility
+--------------
+
+- Window width 1470px or larger
+- MusicCabinet 0.7.24c
+
 Installation (Linux)
 --------------
 
-git clone this repository, navigate to folder (`cd /path/to/files`) and then input this command (I presume you have Musiccabinet 0.7.24c installed, otherwise please correct the version number in the command):
+git clone this repository, navigate to folder (`cd /path/to/files`) and run the installer bash script.
 
 **Note: Might override other theme files, so use with care!**
 
