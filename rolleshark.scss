@@ -19,11 +19,6 @@
 
 body, html {
 
-    h2, p, small, h3, .detail, .detail em, td, tr, table, a, a:link, a:visited, a:hover, b, strong, span {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-
     h1 {
         margin: 0;
         padding: 0;
@@ -34,12 +29,12 @@ body, html {
         margin-right: 10px !important;
     }
 
-    .dense {
-        line-height: 1;
-        padding: 0 !important;
-    }
-
     &.mainframe.bgcolor1 {
+
+        h2, p, small, h3, .detail, .detail em, td, tr, table, a, a:link, a:visited, a:hover, b, strong {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
 
         padding: 8px !important;
 
@@ -85,15 +80,77 @@ body, html {
     }
 }
 
-.playlistframe {
-    *, a, a:link, a:visited, span {
-        font-size: 0.8rem !important;
+input {
+    font-size: 1rem !important;
+}
+
+#nowPlaying {
+    * {
+        font-size: 1rem !important;
         line-height: 1.5;
+    }
+}
+
+.playlistframe {
+
+    div[style='height:3.2em'] {
+        height: 1.2em !important;
+    }
+
+    table {
+
+            opacity: 0.5;
+            transition: all 0.55s;
+
+        * {
+            font-size: 0.9rem !important;
+        }
+
+            &:hover {
+                opacity: 0.9;
+            }        
     }
 
     td[style='white-space:nowrap;'] {
-        padding-left: 2px;
-        padding-right: 2px;
+        padding-left: 4px;
+        padding-right: 4px;
+        font-size: 0.8rem !important;
+    }
+
+    td[style="padding-right:1.25em"], .bgcolor2 {
+        line-height: 1.5 !important;
+        font-size: 0.9rem !important;
+
+        * {
+            font-size: 0.9rem !important;
+        }
+    }
+
+}
+
+.leftframe {
+    a, a:link, a:visited, span {
+        font-size: 1.2rem !important;
+        line-height: 1.5;
+    }
+
+    .dense {
+        line-height: 1;
+        padding: 0 0 0 2px !important;
+        font-weight: 500 !important;
+        opacity: 0.65;
+        transition: all 0.5s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .detail {
+        font-size: 1.1rem !important;
+        line-height: 1.5 !important;
+        font-weight: 600;
+        color: #343434;
+        opacity: 0.8;
     }
 
 }
@@ -182,7 +239,7 @@ img
 
 .logo img
 {
-    margin-top: -20px;
+    margin-top: -30px;
     margin-right: 30px;
 }
 
