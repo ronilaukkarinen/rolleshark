@@ -7,8 +7,12 @@
  *
  */
 
-@import url('webfonts/opensans_regular_macroman/stylesheet.css');
+@import url('../../vendor/bower_components/jeet/scss/jeet/index');
+@import url('webfonts/gudea/stylesheet.css');
 @import 'sonic';
+
+// Variables
+$font: "Gudea", "Helvetica Neue", Helvetica, Arial;
 
 /*
 
@@ -509,7 +513,7 @@ a#togglePlayAdd
 }
 .mainframe .detail em
 {
-    font-family: 'Open Sans' !important;
+    font-family: $font !important;
     font-style: normal !important;
 }
 .outerpair1
@@ -612,13 +616,13 @@ label,
 table,
 a
 {
-    font-family: 'Open Sans',arial !important;
+    font-family: $font !important;
 }
 
 b,
 strong
 {
-    font-family: 'Open Sans' !important;
+    font-family: $font !important;
     font-weight: 600;
 }
 
@@ -631,7 +635,7 @@ input[type=password],
 input[type=text],
 textarea
 {
-    font-family: 'Open Sans',arial;
+    font-family: $font,arial;
     font-size: 1.2em;
 
     display: block;
@@ -662,7 +666,7 @@ textarea:focus
 input[type=submit],
 input[type=button]
 {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-family: $font;
     font-size: 14px;
 
     width: auto;
@@ -693,7 +697,7 @@ input[type=submit]:active
 span.on,
 span.off
 {
-    font-family: 'Open Sans' !important;
+    font-family: $font !important;
     font-size: 14px;
 
     text-shadow: none !important;

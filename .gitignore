@@ -1,3 +1,4 @@
+vendor/
 *.log
 node_modules/
 test_vanilla.sh
