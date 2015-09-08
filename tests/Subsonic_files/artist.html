@@ -1,0 +1,575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0061)http://subsonic.peikko.us/artist.view?id=14&albumId=2651#alb4 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="/script/pngfix.js"></script>
+<![endif]-->
+
+
+<link rel="stylesheet" href="rolleshark.css" type="text/css">
+<link rel="shortcut icon" href="favicon.ico" type="text/css">
+<title>Subsonic</title>
+
+	<link href="shadow.css" rel="stylesheet">
+	<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="engine.js"></script>
+	<script type="text/javascript" src="util.js"></script>
+	<script type="text/javascript" src="uiStarService.js"></script>
+<style type="text/css"></style></head><body class="mainframe bgcolor1" onload="init()" marginwidth="0" marginheight="0">
+
+<script type="text/javascript">
+function toggleStar(type, id, imageId) {
+	if ($(imageId).attr("src").indexOf("icons/rolleshark/ratingOn.png") != -1) {
+		$(imageId).attr("src", "icons/rolleshark/ratingOff.png");
+		if (type === 't') {
+			uiStarService.unstarTrack(id);
+		} else if (type === 'alb') {
+			uiStarService.unstarAlbum(id);
+		} else if (type === 'art') {
+			uiStarService.unstarArtist(id);
+		}
+	}
+	else if ($(imageId).attr("src").indexOf("icons/rolleshark/ratingOff.png") != -1) {
+		$(imageId).attr("src", "icons/rolleshark/ratingOn.png");
+		if (type === 't') {
+			uiStarService.starTrack(id);
+		} else if (type === 'alb') {
+			uiStarService.starAlbum(id);
+		} else if (type === 'art') {
+			uiStarService.starArtist(id);
+		}
+	}
+}
+</script>
+
+<script type="text/javascript" language="javascript">
+
+    function init() {
+        dwr.engine.setErrorHandler(null);
+	}
+
+	function playMode() {
+		return $('#togglePlayAdd').attr('class').substring(0, 1);
+	}
+	
+	function togglePlayAdd() {
+		var t = $('#togglePlayAdd');
+		if (t.attr('class') == 'Play') {
+			t.attr('class', 'Enqueue');
+		} else if (t.attr('class') == 'Enqueue') {
+			t.attr('class', 'Add');
+		} else {
+			t.attr('class', 'Play');
+		}
+		var ids = ['all','top_tracks','artist_radio','random'];
+		for (var i=0; i<ids.length; i++) {
+			if ($('#'+ids[i])) {
+				$('#'+ids[i]).html(t.attr('class') + ' ' + ids[i].replace(/_/g, ' '));
+			}
+		}
+	}
+
+
+	var musicFiles = [[],[[],68554,70042,71544,72735,73622,74704,75933,76623,77375,78106],[[],68555,69820,71049,72259,73591,74696,75538,76588,77234,77950,78478],[[],67867,69127,70378,72260,72800,73943,75015,75983,76862],[[],86930,86937,86942,86948,86953,86922,86923,86924,86925,86926,86927,86983]];
+	
+	function toggleAlbum(index) {
+		a = '#albart' + index;
+		$(a).attr('width', 174 + 87 - $(a).attr('width'));
+		$(a).attr('height', 174 + 87 - $(a).attr('height'));
+
+		$('#albcmd' + index).toggle();
+		$('#albtit' + index).toggle();
+		$('#albson' + index).toggle();
+
+		if ($('#albson' + index).children().size() == 0) {
+			$('#albson' + index).load('album.view?view' + musicFiles[index].join('&mf=') );
+		}
+	}
+
+
+	function toggleArtist() {
+		$('#bioArt').attr('width', 126 + 63 - $('#bioArt').attr('width'));
+		$('#bioArt').attr('height', 126 + 63 - $('#bioArt').attr('height'));
+
+		$('#bio0').toggle();
+		$('#bio1').toggle();
+	}
+
+	$(function() {
+		
+				toggleAlbum('4');
+				window.location.hash='alb4';
+			
+	});
+</script>
+
+<div style="padding: 15px;">
+
+<h1>
+<a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;art&#39;, 14, &#39;#starImage14&#39;); return false;">
+	
+			<img id="starImage14" src="ratingOff.png" alt="">
+		
+</a>
+Amorphis
+</h1>
+
+
+	<table>
+		<tbody><tr>
+			<td style="vertical-align:top">
+				<div class="outerpair1"><div class="outerpair2"><div class="shadowbox"><div class="innerbox">
+					<a href="javascript:noop()" onclick="toggleArtist()">
+						<img id="bioArt" width="63" height="63" src="e164ef13ab2742d3aecf3a1e056e210b.png" alt="">
+					</a>
+				</div></div></div></div>
+			</td>
+			<td style="vertical-align:top">
+				<div style="width:525px;">
+					<div id="bio0" style="display:none">
+						Amorphis is a Finnish progressive/melodic metal band, and formerly death/doom band started by Jan Rechberger, Tomi Koivusaari and Esa Holopainen in Helsinki, Finland in 1990. Amorphis absorbed and incorporated influences from many metal genres, and with time passing their sound evolved dramatically. Initially, the band was a Death Metal act, but with time they have evolved into making music that is more classifiable as Doom Metal with folk influences <a href="http://www.last.fm/music/Amorphis" class="artist">Read more on Last.fm</a>.
+					</div>
+					<div id="bio1">
+						Amorphis is a Finnish progressive/melodic metal band, and formerly death/doom band started by Jan Rechberger, Tomi Koivusaari and Esa Holopainen in Helsinki, Finland in 1990.&nbsp;<a href="javascript:noop()" onclick="toggleArtist()">(...)</a>
+					</div>
+				</div>
+				<div style="line-height: 1.8">
+					
+						<a href="http://subsonic.peikko.us/genres.view?genreUtf8Hex=70726f6772657373697665206d6574616c" class="artist">progressive metal</a>, 
+						<a href="http://subsonic.peikko.us/genres.view?genreUtf8Hex=6465617468206d6574616c" class="artist">death metal</a>, 
+						<a href="http://subsonic.peikko.us/genres.view?genreUtf8Hex=6d656c6f646963206465617468206d6574616c" class="artist">melodic death metal</a>
+						<a href="http://subsonic.peikko.us/artistGenres.view?id=14" class="artist">»</a>
+					
+				</div>
+			</td>
+		</tr>
+	</tbody></table>
+
+
+<h2>
+	<a id="all" href="javascript:noop()" onclick="top.playlist.onPlay([68554, 70042, 71544, 72735, 73622, 74704, 75933, 76623, 77375, 78106, 68555, 69820, 71049, 72259, 73591, 74696, 75538, 76588, 77234, 77950, 78478, 67867, 69127, 70378, 72260, 72800, 73943, 75015, 75983, 76862, 86930, 86937, 86942, 86948, 86953, 86922, 86923, 86924, 86925, 86926, 86927, 86983], playMode());">Play all</a> |
+	
+		<a id="top_tracks" href="javascript:noop()" onclick="top.playlist.onPlayTopTracks(14, playMode());">Play top tracks</a> |
+		<a id="artist_radio" href="javascript:noop()" onclick="top.playlist.onPlayArtistRadio(14, playMode());">Play artist radio</a> |
+	
+	<a id="random" href="javascript:noop()" onclick="top.playlist.onPlayRandom([68554, 70042, 71544, 72735, 73622, 74704, 75933, 76623, 77375, 78106, 68555, 69820, 71049, 72259, 73591, 74696, 75538, 76588, 77234, 77950, 78478, 67867, 69127, 70378, 72260, 72800, 73943, 75015, 75983, 76862, 86930, 86937, 86942, 86948, 86953, 86922, 86923, 86924, 86925, 86926, 86927, 86983], playMode());">Play random</a>
+	<br>
+	<a id="togglePlayAdd" class="Play" href="javascript:togglePlayAdd()" title="Toggle if new tracks replace the current playlist, are played next, or are appended last to it.">Play/enqueue/add</a>
+	
+		| <a href="http://subsonic.peikko.us/related.view?id=14">Related artists</a>
+		
+		| <a href="http://subsonic.peikko.us/artistDetails.view?id=14">Details</a>
+	
+		| <a href="http://subsonic.peikko.us/editArtist.view?id=14&artist=Amorphis">Edit</a>
+	
+</h2>
+
+
+	<div style="padding-top:5px" id="alb1">
+		<div style="float:left">
+			<div class="outerpair1"><div class="outerpair2"><div class="shadowbox"><div class="innerbox">
+				<a href="javascript:noop()" onclick="toggleAlbum(1)">
+					<img id="albart1" width="87" height="87" src="coverArt.view" alt="">
+				</a>
+			</div></div></div></div>
+			<div id="albcmd1" style="display:none;float:right;padding-right:10px;padding-bottom:15px;text-align:right" class="detail">
+				<a href="javascript:noop()" onclick="top.playlist.onPlay([68554, 70042, 71544, 72735, 73622, 74704, 75933, 76623, 77375, 78106], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a><a href="javascript:noop()" onclick="top.playlist.onPlay([68554, 70042, 71544, 72735, 73622, 74704, 75933, 76623, 77375, 78106], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a><a href="javascript:noop()" onclick="top.playlist.onPlay([68554, 70042, 71544, 72735, 73622, 74704, 75933, 76623, 77375, 78106], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a>|<a href="http://subsonic.peikko.us/download.view?idUtf8Hex=5b36383535342c2037303034322c2037313534342c2037323733352c2037333632322c2037343730342c2037353933332c2037363632332c2037373337352c2037383130365d&nameUtf8Hex=416d6f7270686973202d20416d20556e6976657273756d"><img src="download.png" alt="Download" title="Download"></a>
+							| <a rel="zoom" href="http://subsonic.peikko.us/coverArt.view?pathUtf8Hex=2f6d656469612f6769616e742f6c657679742f416d6f7270686973202d20416d20556e6976657273756d202832303031292f303220476f646465737320284f662074686520536164204d616e292e6d7033">Zoom</a>
+						
+
+				<br>
+
+				
+					<a href="http://subsonic.peikko.us/changeCoverArt.view?id=68554&artistId=14&albumId=2157">Art</a> |
+				
+					<a href="http://subsonic.peikko.us/editTags.view?idsUtf8Hex=5b36383535342c2037303034322c2037313534342c2037323733352c2037333632322c2037343730342c2037353933332c2037363632332c2037373337352c2037383130365d&artistId=14&albumId=2157">Tags</a> |
+				
+					<a href="http://subsonic.peikko.us/createShare.view?idsUtf8Hex=5b36383535342c2037303034322c2037313534342c2037323733352c2037333632322c2037343730342c2037353933332c2037363632332c2037373337352c2037383130365d">Share</a>
+				
+				
+			</div>
+		</div>
+		<div style="float:left;padding-left:10px;padding-bottom:15px">
+			<div>
+				<a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;alb&#39;, 2157, &#39;#starImage2157&#39;); return false;">
+					
+							<img id="starImage2157" src="ratingOff.png" alt="">
+						
+				</a>
+				<a href="javascript:noop()" onclick="toggleAlbum(1)">
+					<b>Am Universum</b> <em>(2001)</em>
+				</a>
+				
+				<br>
+			</div>
+			<div id="albtit1">
+				<a href="javascript:noop()" onclick="top.playlist.onPlay([68554, 70042, 71544, 72735, 73622, 74704, 75933, 76623, 77375, 78106], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a><a href="javascript:noop()" onclick="top.playlist.onPlay([68554, 70042, 71544, 72735, 73622, 74704, 75933, 76623, 77375, 78106], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a><a href="javascript:noop()" onclick="top.playlist.onPlay([68554, 70042, 71544, 72735, 73622, 74704, 75933, 76623, 77375, 78106], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a>|<a href="http://subsonic.peikko.us/download.view?idUtf8Hex=5b36383535342c2037303034322c2037313534342c2037323733352c2037333632322c2037343730342c2037353933332c2037363632332c2037373337352c2037383130365d&nameUtf8Hex=416d6f7270686973202d20416d20556e6976657273756d"><img src="download.png" alt="Download" title="Download"></a>
+			</div>
+			<div id="albson1" style="display:none"></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+
+
+	<div style="padding-top:5px" id="alb2">
+		<div style="float:left">
+			<div class="outerpair1"><div class="outerpair2"><div class="shadowbox"><div class="innerbox">
+				<a href="javascript:noop()" onclick="toggleAlbum(2)">
+					<img id="albart2" width="87" height="87" src="coverArt(1).view" alt="">
+				</a>
+			</div></div></div></div>
+			<div id="albcmd2" style="display:none;float:right;padding-right:10px;padding-bottom:15px;text-align:right" class="detail">
+				<a href="javascript:noop()" onclick="top.playlist.onPlay([68555, 69820, 71049, 72259, 73591, 74696, 75538, 76588, 77234, 77950, 78478], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a><a href="javascript:noop()" onclick="top.playlist.onPlay([68555, 69820, 71049, 72259, 73591, 74696, 75538, 76588, 77234, 77950, 78478], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a><a href="javascript:noop()" onclick="top.playlist.onPlay([68555, 69820, 71049, 72259, 73591, 74696, 75538, 76588, 77234, 77950, 78478], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a>|<a href="http://subsonic.peikko.us/download.view?idUtf8Hex=5b36383535352c2036393832302c2037313034392c2037323235392c2037333539312c2037343639362c2037353533382c2037363538382c2037373233342c2037373935302c2037383437385d&nameUtf8Hex=416d6f7270686973202d2045636c69707365"><img src="download.png" alt="Download" title="Download"></a>
+							| <a rel="zoom" href="http://subsonic.peikko.us/coverArt.view?pathUtf8Hex=2f6d656469612f6769616e742f6c657679742f416d6f7270686973202d2045636c69707365202832303036292f303520556e646572206120536f696c20616e6420426c61636b2053746f6e652e6d7033">Zoom</a>
+						
+
+				<br>
+
+				
+					<a href="http://subsonic.peikko.us/changeCoverArt.view?id=68555&artistId=14&albumId=2158">Art</a> |
+				
+					<a href="http://subsonic.peikko.us/editTags.view?idsUtf8Hex=5b36383535352c2036393832302c2037313034392c2037323235392c2037333539312c2037343639362c2037353533382c2037363538382c2037373233342c2037373935302c2037383437385d&artistId=14&albumId=2158">Tags</a> |
+				
+					<a href="http://subsonic.peikko.us/createShare.view?idsUtf8Hex=5b36383535352c2036393832302c2037313034392c2037323235392c2037333539312c2037343639362c2037353533382c2037363538382c2037373233342c2037373935302c2037383437385d">Share</a>
+				
+				
+			</div>
+		</div>
+		<div style="float:left;padding-left:10px;padding-bottom:15px">
+			<div>
+				<a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;alb&#39;, 2158, &#39;#starImage2158&#39;); return false;">
+					
+							<img id="starImage2158" src="ratingOff.png" alt="">
+						
+				</a>
+				<a href="javascript:noop()" onclick="toggleAlbum(2)">
+					<b>Eclipse</b> <em>(2006)</em>
+				</a>
+				
+				<br>
+			</div>
+			<div id="albtit2">
+				<a href="javascript:noop()" onclick="top.playlist.onPlay([68555, 69820, 71049, 72259, 73591, 74696, 75538, 76588, 77234, 77950, 78478], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a><a href="javascript:noop()" onclick="top.playlist.onPlay([68555, 69820, 71049, 72259, 73591, 74696, 75538, 76588, 77234, 77950, 78478], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a><a href="javascript:noop()" onclick="top.playlist.onPlay([68555, 69820, 71049, 72259, 73591, 74696, 75538, 76588, 77234, 77950, 78478], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a>|<a href="http://subsonic.peikko.us/download.view?idUtf8Hex=5b36383535352c2036393832302c2037313034392c2037323235392c2037333539312c2037343639362c2037353533382c2037363538382c2037373233342c2037373935302c2037383437385d&nameUtf8Hex=416d6f7270686973202d2045636c69707365"><img src="download.png" alt="Download" title="Download"></a>
+			</div>
+			<div id="albson2" style="display:none"></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+
+
+	<div style="padding-top:5px" id="alb3">
+		<div style="float:left">
+			<div class="outerpair1"><div class="outerpair2"><div class="shadowbox"><div class="innerbox">
+				<a href="javascript:noop()" onclick="toggleAlbum(3)">
+					<img id="albart3" width="87" height="87" src="coverArt(2).view" alt="">
+				</a>
+			</div></div></div></div>
+			<div id="albcmd3" style="display:none;float:right;padding-right:10px;padding-bottom:15px;text-align:right" class="detail">
+				<a href="javascript:noop()" onclick="top.playlist.onPlay([67867, 69127, 70378, 72260, 72800, 73943, 75015, 75983, 76862], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a><a href="javascript:noop()" onclick="top.playlist.onPlay([67867, 69127, 70378, 72260, 72800, 73943, 75015, 75983, 76862], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a><a href="javascript:noop()" onclick="top.playlist.onPlay([67867, 69127, 70378, 72260, 72800, 73943, 75015, 75983, 76862], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a>|<a href="http://subsonic.peikko.us/download.view?idUtf8Hex=5b36373836372c2036393132372c2037303337382c2037323236302c2037323830302c2037333934332c2037353031352c2037353938332c2037363836325d&nameUtf8Hex=416d6f7270686973202d20436972636c65"><img src="download.png" alt="Download" title="Download"></a>
+							| <a rel="zoom" href="http://subsonic.peikko.us/coverArt.view?pathUtf8Hex=2f6d656469612f6769616e742f6c657679742f416d6f7270686973202d20436972636c65202832303133292f303520486f70656c65737320446179732e6d7033">Zoom</a>
+						
+
+				<br>
+
+				
+					<a href="http://subsonic.peikko.us/changeCoverArt.view?id=67867&artistId=14&albumId=38">Art</a> |
+				
+					<a href="http://subsonic.peikko.us/editTags.view?idsUtf8Hex=5b36373836372c2036393132372c2037303337382c2037323236302c2037323830302c2037333934332c2037353031352c2037353938332c2037363836325d&artistId=14&albumId=38">Tags</a> |
+				
+					<a href="http://subsonic.peikko.us/createShare.view?idsUtf8Hex=5b36373836372c2036393132372c2037303337382c2037323236302c2037323830302c2037333934332c2037353031352c2037353938332c2037363836325d">Share</a>
+				
+				
+			</div>
+		</div>
+		<div style="float:left;padding-left:10px;padding-bottom:15px">
+			<div>
+				<a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;alb&#39;, 38, &#39;#starImage38&#39;); return false;">
+					
+							<img id="starImage38" src="ratingOff.png" alt="">
+						
+				</a>
+				<a href="javascript:noop()" onclick="toggleAlbum(3)">
+					<b>Circle</b> <em>(2013)</em>
+				</a>
+				
+				<br>
+			</div>
+			<div id="albtit3">
+				<a href="javascript:noop()" onclick="top.playlist.onPlay([67867, 69127, 70378, 72260, 72800, 73943, 75015, 75983, 76862], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a><a href="javascript:noop()" onclick="top.playlist.onPlay([67867, 69127, 70378, 72260, 72800, 73943, 75015, 75983, 76862], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a><a href="javascript:noop()" onclick="top.playlist.onPlay([67867, 69127, 70378, 72260, 72800, 73943, 75015, 75983, 76862], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a>|<a href="http://subsonic.peikko.us/download.view?idUtf8Hex=5b36373836372c2036393132372c2037303337382c2037323236302c2037323830302c2037333934332c2037353031352c2037353938332c2037363836325d&nameUtf8Hex=416d6f7270686973202d20436972636c65"><img src="download.png" alt="Download" title="Download"></a>
+			</div>
+			<div id="albson3" style="display:none"></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+
+
+	<div style="padding-top:5px" id="alb4">
+		<div style="float:left">
+			<div class="outerpair1"><div class="outerpair2"><div class="shadowbox"><div class="innerbox">
+				<a href="javascript:noop()" onclick="toggleAlbum(4)">
+					<img id="albart4" width="174" height="174" src="coverArt(3).view" alt="">
+				</a>
+			</div></div></div></div>
+			<div id="albcmd4" style="float: right; padding-right: 10px; padding-bottom: 15px; text-align: right;" class="detail">
+				<a href="javascript:noop()" onclick="top.playlist.onPlay([86930, 86937, 86942, 86948, 86953, 86922, 86923, 86924, 86925, 86926, 86927, 86983], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a><a href="javascript:noop()" onclick="top.playlist.onPlay([86930, 86937, 86942, 86948, 86953, 86922, 86923, 86924, 86925, 86926, 86927, 86983], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a><a href="javascript:noop()" onclick="top.playlist.onPlay([86930, 86937, 86942, 86948, 86953, 86922, 86923, 86924, 86925, 86926, 86927, 86983], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a>|<a href="http://subsonic.peikko.us/download.view?idUtf8Hex=5b38363933302c2038363933372c2038363934322c2038363934382c2038363935332c2038363932322c2038363932332c2038363932342c2038363932352c2038363932362c2038363932372c2038363938335d&nameUtf8Hex=416d6f7270686973202d20556e646572207468652052656420436c6f7564"><img src="download.png" alt="Download" title="Download"></a>
+							| <a rel="zoom" href="http://subsonic.peikko.us/coverArt.view?pathUtf8Hex=2f6d656469612f6769616e742f6c657679742f416d6f7270686973202d20556e646572205468652052656420436c6f7564202832303135292f3037202d204461726b20506174682e6d7033">Zoom</a>
+						
+
+				<br>
+
+				
+					<a href="http://subsonic.peikko.us/changeCoverArt.view?id=86930&artistId=14&albumId=2651">Art</a> |
+				
+					<a href="http://subsonic.peikko.us/editTags.view?idsUtf8Hex=5b38363933302c2038363933372c2038363934322c2038363934382c2038363935332c2038363932322c2038363932332c2038363932342c2038363932352c2038363932362c2038363932372c2038363938335d&artistId=14&albumId=2651">Tags</a> |
+				
+					<a href="http://subsonic.peikko.us/createShare.view?idsUtf8Hex=5b38363933302c2038363933372c2038363934322c2038363934382c2038363935332c2038363932322c2038363932332c2038363932342c2038363932352c2038363932362c2038363932372c2038363938335d">Share</a>
+				
+				
+			</div>
+		</div>
+		<div style="float:left;padding-left:10px;padding-bottom:15px">
+			<div>
+				<a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;alb&#39;, 2651, &#39;#starImage2651&#39;); return false;">
+					
+							<img id="starImage2651" src="ratingOff.png" alt="">
+						
+				</a>
+				<a href="javascript:noop()" onclick="toggleAlbum(4)">
+					<b>Under the Red Cloud</b> <em>(2015)</em>
+				</a>
+				
+				<br>
+			</div>
+			<div id="albtit4" style="display: none;">
+				<a href="javascript:noop()" onclick="top.playlist.onPlay([86930, 86937, 86942, 86948, 86953, 86922, 86923, 86924, 86925, 86926, 86927, 86983], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a><a href="javascript:noop()" onclick="top.playlist.onPlay([86930, 86937, 86942, 86948, 86953, 86922, 86923, 86924, 86925, 86926, 86927, 86983], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a><a href="javascript:noop()" onclick="top.playlist.onPlay([86930, 86937, 86942, 86948, 86953, 86922, 86923, 86924, 86925, 86926, 86927, 86983], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a>|<a href="http://subsonic.peikko.us/download.view?idUtf8Hex=5b38363933302c2038363933372c2038363934322c2038363934382c2038363935332c2038363932322c2038363932332c2038363932342c2038363932352c2038363932362c2038363932372c2038363938335d&nameUtf8Hex=416d6f7270686973202d20556e646572207468652052656420436c6f7564"><img src="download.png" alt="Download" title="Download"></a>
+			</div>
+			<div id="albson4">
+
+
+
+
+	
+
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="/script/pngfix.js"></script>
+<![endif]-->
+
+
+<link rel="stylesheet" href="rolleshark.css" type="text/css">
+<link rel="shortcut icon" href="favicon.ico" type="text/css">
+<title>Subsonic</title>
+
+
+
+<span class="detailSelected">
+</span><span class="detailSelected">
+</span><span class="detailSelected">
+</span><span class="detailSelected">
+</span><span class="detailSelected">
+</span><span class="detailSelected">
+</span><span class="detailSelected">
+</span><span class="detailSelected">
+</span><span class="detailSelected">
+</span><span class="detailSelected">
+</span><span class="detailSelected">
+</span><span class="detailSelected">
+</span><table style="border-collapse:collapse;white-space:nowrap">
+	
+
+<tbody><tr style="margin:0;padding:0;border:0">
+	<td>
+    <a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;t&#39;, 86930, &#39;#starImage86930&#39;); return false;">
+        
+                <img id="starImage86930" src="ratingOn.png" alt="">
+            
+    </a>
+    </td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86930], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86930], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86930], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a></td><td></td><td style="padding-right:0.5em;text-align:right"><span class="detail">1</span></td>
+	<td style="padding-right:1.25em;white-space:nowrap"><span class="detail" title="Under the Red Cloud">Under the Red Cloud</span></td>
+	<td style="padding-right:1.25em;text-align:right"><span class="detail">5:33</span></td>
+
+	</tr>
+
+
+
+<tr style="margin:0;padding:0;border:0">
+	<td>
+    <a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;t&#39;, 86937, &#39;#starImage86937&#39;); return false;">
+        
+                <img id="starImage86937" src="ratingOn.png" alt="">
+            
+    </a>
+    </td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86937], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86937], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86937], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a></td><td></td><td style="padding-right:0.5em;text-align:right"><span class="detail">2</span></td>
+	<td style="padding-right:1.25em;white-space:nowrap"><span class="detail" title="The Four Wise Ones">The Four Wise Ones</span></td>
+	<td style="padding-right:1.25em;text-align:right"><span class="detail">4:40</span></td>
+
+	</tr>
+
+
+
+<tr style="margin:0;padding:0;border:0">
+	<td>
+    <a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;t&#39;, 86942, &#39;#starImage86942&#39;); return false;">
+        
+                <img id="starImage86942" src="ratingOff.png" alt="">
+            
+    </a>
+    </td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86942], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86942], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86942], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a></td><td></td><td style="padding-right:0.5em;text-align:right"><span class="detail">3</span></td>
+	<td style="padding-right:1.25em;white-space:nowrap"><span class="detail" title="Bad Blood">Bad Blood</span></td>
+	<td style="padding-right:1.25em;text-align:right"><span class="detail">5:23</span></td>
+
+	</tr>
+
+
+
+<tr style="margin:0;padding:0;border:0">
+	<td>
+    <a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;t&#39;, 86948, &#39;#starImage86948&#39;); return false;">
+        
+                <img id="starImage86948" src="ratingOff.png" alt="">
+            
+    </a>
+    </td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86948], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86948], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86948], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a></td><td></td><td style="padding-right:0.5em;text-align:right"><span class="detail">4</span></td>
+	<td style="padding-right:1.25em;white-space:nowrap"><span class="detail" title="The Skull">The Skull</span></td>
+	<td style="padding-right:1.25em;text-align:right"><span class="detail">5:04</span></td>
+
+	</tr>
+
+
+
+<tr style="margin:0;padding:0;border:0">
+	<td>
+    <a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;t&#39;, 86953, &#39;#starImage86953&#39;); return false;">
+        
+                <img id="starImage86953" src="ratingOff.png" alt="">
+            
+    </a>
+    </td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86953], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86953], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86953], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a></td><td></td><td style="padding-right:0.5em;text-align:right"><span class="detail">5</span></td>
+	<td style="padding-right:1.25em;white-space:nowrap"><span class="detail" title="Death of a King">Death of a King</span></td>
+	<td style="padding-right:1.25em;text-align:right"><span class="detail">5:14</span></td>
+
+	</tr>
+
+
+
+<tr style="margin:0;padding:0;border:0">
+	<td>
+    <a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;t&#39;, 86922, &#39;#starImage86922&#39;); return false;">
+        
+                <img id="starImage86922" src="ratingOff.png" alt="">
+            
+    </a>
+    </td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86922], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86922], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86922], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a></td><td></td><td style="padding-right:0.5em;text-align:right"><span class="detail">6</span></td>
+	<td style="padding-right:1.25em;white-space:nowrap"><span class="detail" title="Sacrifice">Sacrifice</span></td>
+	<td style="padding-right:1.25em;text-align:right"><span class="detail">3:56</span></td>
+
+	</tr>
+
+
+
+<tr style="margin:0;padding:0;border:0">
+	<td>
+    <a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;t&#39;, 86923, &#39;#starImage86923&#39;); return false;">
+        
+                <img id="starImage86923" src="ratingOff.png" alt="">
+            
+    </a>
+    </td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86923], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86923], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86923], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a></td><td></td><td style="padding-right:0.5em;text-align:right"><span class="detail">7</span></td>
+	<td style="padding-right:1.25em;white-space:nowrap"><span class="detail" title="Dark Path">Dark Path</span></td>
+	<td style="padding-right:1.25em;text-align:right"><span class="detail">5:08</span></td>
+
+	</tr>
+
+
+
+<tr style="margin:0;padding:0;border:0">
+	<td>
+    <a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;t&#39;, 86924, &#39;#starImage86924&#39;); return false;">
+        
+                <img id="starImage86924" src="ratingOff.png" alt="">
+            
+    </a>
+    </td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86924], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86924], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86924], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a></td><td></td><td style="padding-right:0.5em;text-align:right"><span class="detail">8</span></td>
+	<td style="padding-right:1.25em;white-space:nowrap"><span class="detail" title="Enemy at the Gates">Enemy at the Gates</span></td>
+	<td style="padding-right:1.25em;text-align:right"><span class="detail">5:07</span></td>
+
+	</tr>
+
+
+
+<tr style="margin:0;padding:0;border:0">
+	<td>
+    <a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;t&#39;, 86925, &#39;#starImage86925&#39;); return false;">
+        
+                <img id="starImage86925" src="ratingOff.png" alt="">
+            
+    </a>
+    </td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86925], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86925], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86925], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a></td><td></td><td style="padding-right:0.5em;text-align:right"><span class="detail">9</span></td>
+	<td style="padding-right:1.25em;white-space:nowrap"><span class="detail" title="Tree of Ages">Tree of Ages</span></td>
+	<td style="padding-right:1.25em;text-align:right"><span class="detail">4:36</span></td>
+
+	</tr>
+
+
+
+<tr style="margin:0;padding:0;border:0">
+	<td>
+    <a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;t&#39;, 86926, &#39;#starImage86926&#39;); return false;">
+        
+                <img id="starImage86926" src="ratingOff.png" alt="">
+            
+    </a>
+    </td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86926], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86926], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86926], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a></td><td></td><td style="padding-right:0.5em;text-align:right"><span class="detail">10</span></td>
+	<td style="padding-right:1.25em;white-space:nowrap"><span class="detail" title="White Night">White Night</span></td>
+	<td style="padding-right:1.25em;text-align:right"><span class="detail">5:15</span></td>
+
+	</tr>
+
+
+
+<tr style="margin:0;padding:0;border:0">
+	<td>
+    <a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;t&#39;, 86927, &#39;#starImage86927&#39;); return false;">
+        
+                <img id="starImage86927" src="ratingOff.png" alt="">
+            
+    </a>
+    </td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86927], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86927], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86927], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a></td><td></td><td style="padding-right:0.5em;text-align:right"><span class="detail">11</span></td>
+	<td style="padding-right:1.25em;white-space:nowrap"><span class="detail" title="Come the Spring (Bonus Track)">Come the Spring (Bonus Track)</span></td>
+	<td style="padding-right:1.25em;text-align:right"><span class="detail">3:27</span></td>
+
+	</tr>
+
+
+
+<tr style="margin:0;padding:0;border:0">
+	<td>
+    <a href="http://subsonic.peikko.us/artist.view?id=14&albumId=2651#" onclick="toggleStar(&#39;t&#39;, 86983, &#39;#starImage86983&#39;); return false;">
+        
+                <img id="starImage86983" src="ratingOff.png" alt="">
+            
+    </a>
+    </td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86983], &#39;P&#39;);"><img src="play.png" alt="Play" title="Play"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86983], &#39;E&#39;);"><img src="enqueue.png" alt="Enqueue" title="Enqueue"></a></td><td><a href="javascript:noop()" onclick="top.playlist.onPlay([86983], &#39;A&#39;);"><img src="add.png" alt="Add last" title="Add last"></a></td><td></td><td style="padding-right:0.5em;text-align:right"><span class="detail">12</span></td>
+	<td style="padding-right:1.25em;white-space:nowrap"><span class="detail" title="Winter’s Sleep (Bonus Track)">Winter’s Sleep (Bonus Track)</span></td>
+	<td style="padding-right:1.25em;text-align:right"><span class="detail">6:37</span></td>
+
+	</tr>
+
+
+</tbody></table>
+
+
+
+</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+
+
+
+</div>
+
+
+
+</body></html>

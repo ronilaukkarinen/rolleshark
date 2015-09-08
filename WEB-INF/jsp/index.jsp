@@ -4,6 +4,7 @@
 <html><head>
     <%@ include file="head.jspf" %>
     <link rel="alternate" type="application/rss+xml" title="Subsonic Podcast" href="podcast.view?suffix=.rss">
+    <script src="script/jquery-1.7.2.min.js"></script>
 </head>
 
 <frameset rows="70,*,0" border="0" framespacing="0" frameborder="0">
