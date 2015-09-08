@@ -66,9 +66,9 @@ gulp.task('browsersync', function() {
   ];
 
   browserSync.init(files, {
-    proxy: "rolleshark.dev",
+    proxy: "rolleshark.dev/tests",
     browser: "Google Chrome",
-    notify: true
+    notify: false
   });
 
 });
