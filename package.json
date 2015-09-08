@@ -4,6 +4,7 @@
   "description": "A very clear and functional Subsonic theme based on Sonic and inspired by Grooveshark UI.",
   "author": "Roni Laukkarinen",
   "devDependencies": {
+    "exec": "0.2.1",    
     "browser-sync": "^2.9.2",
     "gulp": "^3.9.0",
     "gulp-notify": "^2.2.0",
@@ -16,8 +17,7 @@
     "gulp-cache": "0.3.0",
     "gulp-concat": "2.6.0",
     "gulp-header": "1.7.1",
-    "require-dir": "^0.3.0",
-    "run-sequence": "1.1.2"
+    "require-dir": "^0.3.0"
   },
   "dependencies": {
     "backbone": "~1.2.3",

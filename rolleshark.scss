@@ -7,12 +7,22 @@
  *
  */
 
-@import url('../../vendor/bower_components/jeet/scss/jeet/index');
-@import url('webfonts/gudea/stylesheet.css');
+@import 'bower_components/jeet/scss/jeet/index';
+@import 'bower_components/sassline/assets/sass/base/reset';
+@import 'bower_components/sassline/assets/sass/base/variables';
+@import 'bower_components/sassline/assets/sass/base/modular-scale';
+@import 'bower_components/sassline/assets/sass/base/mixins';
+@import 'bower_components/sassline/assets/sass/base/typography';
+@import 'webfonts/proxima_nova/proxima-nova.css';
 @import 'sonic';
 
+body, html {
+    font-size: 100%;
+    line-height: 1.5;
+}
+
 // Variables
-$font: "Gudea", "Helvetica Neue", Helvetica, Arial;
+$font: "Proxima Nova", "Helvetica Neue", Helvetica, Arial;
 
 /*
 
@@ -635,8 +645,7 @@ input[type=password],
 input[type=text],
 textarea
 {
-    font-family: $font,arial;
-    font-size: 1.2em;
+    font-family: $font;
 
     display: block;
 
@@ -667,7 +676,6 @@ input[type=submit],
 input[type=button]
 {
     font-family: $font;
-    font-size: 14px;
 
     width: auto;
     padding: 10px 20px;
@@ -698,7 +706,6 @@ span.on,
 span.off
 {
     font-family: $font !important;
-    font-size: 14px;
 
     text-shadow: none !important;
 }

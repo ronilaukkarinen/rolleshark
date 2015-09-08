@@ -8,7 +8,6 @@ var changed     = require('gulp-changed');
 var gulp        = require('gulp');
 var sass        = require('gulp-sass');
 var browserSync = require('browser-sync');
-var reload      = browserSync.reload;
 var notify      = require('gulp-notify');
 var prefix      = require('gulp-autoprefixer');
 var minifycss   = require('gulp-minify-css');
@@ -17,7 +16,7 @@ var cache       = require('gulp-cache');
 var concat      = require('gulp-concat');
 var util        = require('gulp-util');
 var header      = require('gulp-header');
-var runSequence = require('run-sequence');
+var exec        = require('child_process').exec;
 
 /* 
 

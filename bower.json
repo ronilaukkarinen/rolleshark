@@ -1,6 +1,7 @@
 {
   "name": "rolleshark",
   "dependencies": {
-    "jeet": "*"
+    "jeet": "*",
+    "sassline": "*"
   }
 }

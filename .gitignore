@@ -1,4 +1,5 @@
 vendor/
+bower_components/
 *.log
 node_modules/
 test_vanilla.sh

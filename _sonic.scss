@@ -105,11 +105,10 @@ h1, h1 a, .logo {
  ***************************************************************************************/
 
 body {
-    padding:0;
-    border:0;
-    margin:0.75em;
-    font-size: 9pt;
-    line-height: 1.5em;
+    padding: 0;
+    border: 0;
+    margin: 0.75em;
+    line-height: 1.5;
 }
 
 p {
@@ -126,7 +125,6 @@ p {
 
 h1 {
     white-space: nowrap;
-    font-size: 140%;
     padding: 0 0 0.2em 0;
     border: 0;
     margin: 0;
@@ -134,30 +132,17 @@ h1 {
 
 h2 {
     white-space: nowrap;
-    font-size: 100%;
     margin: 1em 0 0.2em 0;
 }
 
 form {
-    font-size: 100%;
     line-height: 140%;
     padding: 0;
     border: 0;
     margin: 0;
 }
 
-input, select, textarea {
-    font-size: 9pt;
-}
-
-label {
-    font-size: 100%;
-    line-height: 140%;
-}
-
 table {
-    font-size: 100%;
-    line-height: 140%;
     padding: 0;
     border: 0;
     margin: 0 0 0.4em 0;
@@ -169,7 +154,6 @@ table.indent {
 }
 
 a {
-    font-size: 100%;
     text-decoration: none
 }
 
@@ -187,8 +171,6 @@ img {
 
 .detail, .detailSelected {
     white-space: nowrap;
-    font-size: 8pt;
-    line-height: 1.25em;
 }
 
 .detailSelected {
@@ -201,7 +183,6 @@ img {
 
 .logo {
     white-space: nowrap;
-    font-size: 16pt;
 }
 
 .back, .forward {
@@ -221,8 +202,6 @@ img {
 
 .log {
     white-space: nowrap;
-    font-size: 8pt;
-    line-height: 1em;
 }
 
 .checkbox {
