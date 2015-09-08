@@ -15,10 +15,87 @@
 @import 'bower_components/sassline/assets/sass/base/typography';
 @import 'webfonts/proxima_nova/proxima-nova.css';
 @import 'sonic';
+@import 'typography';
 
 body, html {
-    font-size: 100%;
-    line-height: 1.5;
+
+    h2, p, small, h3, .detail, .detail em, td, tr, table, a, a:link, a:visited, a:hover, b, strong, span {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+
+    .outerpair1 {
+        margin-right: 10px !important;
+    }
+
+    .dense {
+        line-height: 1;
+        padding: 0 !important;
+    }
+
+    &.mainframe.bgcolor1 {
+
+        padding: 8px !important;
+
+        h1 {
+            margin-bottom: 0;
+            font-weight: 700;
+        }
+        h2 {
+            margin-top: 0;
+        }
+
+        // Album
+        div[style='width:108px;float:left'] {
+            margin-bottom: 10px !important;
+            margin-top: 10px !important;
+        }
+
+        .detail {
+
+            padding-top: 5px;
+
+            em {
+                font-size: 0.8rem !important;
+                opacity: 0.8;
+                font-style: normal;
+                line-height: 0.5;
+                margin: 0;
+                padding: 0;
+            }
+            font-size: 1rem !important;
+            opacity: 0.6;
+            transition: all 0.55s;
+            font-weight: 700;
+
+            a:hover, &:hover {
+                opacity: 0.8;
+                *, a {
+                    color: #222222;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.playlistframe {
+    *, a, a:link, a:visited, span {
+        font-size: 0.8rem !important;
+        line-height: 1.5;
+    }
+
+    td[style='white-space:nowrap;'] {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
 }
 
 // Variables
@@ -100,11 +177,13 @@ img
 
 /*******************************************/
 
-/* Don't edit anything below this! */
+/* Layout start -- preferably uneditable 
+   Old shieet mostly... but it works. */
 
 .logo img
 {
-    margin-top: -9px;
+    margin-top: -20px;
+    margin-right: 30px;
 }
 
 a,
@@ -147,13 +226,19 @@ body.topframe
 {
     z-index: 400;
 
-    overflow: hidden;
+    overflow: hidden;;
 
     background-color: #303030;
     background-color: #2c2c2c;
     background-image: linear-gradient(to top, #333, #222);
     background-repeat: repeat-x;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .25);
+
+    td {
+        .detail, .detail a, .detail p {
+            font-size: 0.8rem !important;
+        }
+    }
 }
 
 .topframe form img
@@ -187,7 +272,10 @@ display:none;
 
 .topframe table table img
 {
+    margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .topframe table table td:last-child img
@@ -217,7 +305,7 @@ display:none;
 
     width: 284px;
     height: 28px;
-    margin: 0;
+    margin: 10px 0 0 0;
     padding: 0 22px 0 12px;
 
     border: solid 1px #111;
@@ -524,7 +612,6 @@ a#togglePlayAdd
 .mainframe .detail em
 {
     font-family: $font !important;
-    font-style: normal !important;
 }
 .outerpair1
 {
@@ -577,6 +664,22 @@ a#togglePlayAdd
 body.leftframe
 {
     background: url(../icons/rolleshark/bg.gif);
+
+    div[style='padding-bottom:0.5em'], div[style='opacity: 1.0; clear: both; position: fixed; bottom: 0; right: 0; left: 0;
+      padding: 0.25em 0.75em 0.25em 0.75em; border-top:1px solid black; max-width: 850px'], div.bgcolor2 {
+        display: none !important;
+    }
+
+    .bgcolor1 {
+        background: transparent;
+    }
+
+    line-height: 1 !important;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
 }
 
 select
@@ -769,12 +872,6 @@ body.mainframe div[style].detail
     padding: 0 15px 15px 0 !important;
 }
 
-
-body.mainframe
-{
-    padding: 15px !important;
-}
-
 body.mainframe.bgcolor1 div div div div table
 {
     margin-bottom: 20px;
@@ -910,6 +1007,10 @@ body > div[style='width:15em;float:right;padding:0 1em 0 1em;border-left:1px sol
     background-image: none !important;
 
     td {
+        text-align: center;
+        min-width: 0 !important;
+        padding-right: 0 !important;
+
         a {
             opacity: 0.7;
 
