@@ -19,6 +19,14 @@
 
 body, html {
 
+    .detailselected {
+        display: none !important;
+    }
+
+    table[style='border-collapse:collapse;white-space:nowrap'] {
+        margin-top: 10px !important;
+    }
+
     h1 {
         margin: 0;
         padding: 0;
