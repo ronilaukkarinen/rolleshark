@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0040)playlist.view? -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="/script/pngfix.js"></script>
+<![endif]-->
+
+
+<link rel="stylesheet" href="rolleshark.css" type="text/css">
+<link rel="shortcut icon" href="favicon.ico" type="text/css">
+<title>Subsonic</title>
+
+    <link type="text/css" rel="stylesheet" href="luna.css">
+</head>
+
+<body class="bgcolor2 playlistframe">
+
+<div class="bgcolor2" style="position:fixed; top:0; width:100%;padding-top:0.5em">
+    <table style="white-space:nowrap;">
+        <tbody><tr style="white-space:nowrap;">
+            
+                <td><select name="player" onchange="location=&#39;playlist.view?player=&#39; + options[selectedIndex].value;">
+                    
+                        <option value="4">rolleplayer-external</option>
+                    
+                        <option value="8">selain</option>
+                    
+                        <option value="440">Player 440</option>
+                    
+                        <option value="441">Player 441</option>
+                    
+                        <option value="448">Player 448</option>
+                    
+                        <option value="758">rolleplayer (copy)</option>
+                    
+                        <option value="759">rolleplayer (copy)</option>
+                    
+                        <option value="995">Player 995</option>
+                    
+                        <option selected="" value="1037">Player 1037</option>
+                    
+                </select></td>
+            
+                <td style="width:340px; height:24px;padding-left:10px;padding-right:10px"><div id="mediaplayer_wrapper" style="position: relative; width: 340px; height: 24px;"></div></td>
+            
+                <td style="white-space:nowrap;"><a href="javascript:noop()" onclick="onPrevious()"><b>«</b></a></td>
+                <td style="white-space:nowrap;"><a href="javascript:noop()" onclick="onNext(false)"><b>»</b></a> |</td>
+            
+
+            <td style="white-space:nowrap;"><a href="javascript:noop()" onclick="onClear()">Clear</a> |</td>
+            <td style="white-space:nowrap;"><a href="javascript:noop()" onclick="onShuffle()">Shuffle</a> |</td>
+
+            
+                <td style="white-space:nowrap;"><a href="javascript:noop()" onclick="onToggleRepeat()"><span id="toggleRepeat">Repeat is off</span></a> |</td>
+            
+
+            <td style="white-space:nowrap;"><a href="javascript:noop()" onclick="onUndo()">Undo</a> |</td>
+
+            
+                <td style="white-space:nowrap;"><a href="playerSettings.view?id=1037" target="main">Settings</a> |</td>
+            
+
+            <td style="white-space:nowrap;"><select id="moreActions" onchange="actionSelected(this.options[selectedIndex].id)">
+                <option id="top" selected="selected">More actions...</option>
+                <option style="color:blue;">Playlist</option>
+                <option id="loadPlaylist">&nbsp;&nbsp;&nbsp;&nbsp;Load</option>
+                
+                    <option id="savePlaylist">&nbsp;&nbsp;&nbsp;&nbsp;Save</option>
+                
+                    <option id="downloadPlaylist">&nbsp;&nbsp;&nbsp;&nbsp;Download</option>
+                
+                    <option id="sharePlaylist">&nbsp;&nbsp;&nbsp;&nbsp;Share</option>
+                
+                <option id="sortByTrack">&nbsp;&nbsp;&nbsp;&nbsp;Sort by track</option>
+                <option id="sortByAlbum">&nbsp;&nbsp;&nbsp;&nbsp;Sort by album</option>
+                <option id="sortByArtist">&nbsp;&nbsp;&nbsp;&nbsp;Sort by artist</option>
+                <option style="color:blue;">Selected songs</option>
+                <option id="selectAll">&nbsp;&nbsp;&nbsp;&nbsp;Select all</option>
+                <option id="selectNone">&nbsp;&nbsp;&nbsp;&nbsp;Select none</option>
+                <option id="removeSelected">&nbsp;&nbsp;&nbsp;&nbsp;Remove</option>
+                
+                    <option id="download">&nbsp;&nbsp;&nbsp;&nbsp;Download</option>
+                
+                    <option id="appendPlaylist">&nbsp;&nbsp;&nbsp;&nbsp;Add to playlist</option>
+                
+            </select>
+            </td>
+
+        </tr></tbody></table>
+</div>
+
+<div style="height:3.2em"></div>
+
+<p id="empty" style="display: none;"><em>Playlist is empty</em></p>
+
+<table style="border-collapse:collapse;white-space:nowrap;">
+    <tbody id="playlistBody"><tr id="pattern1" style="margin: 0px; padding: 0px; border: 0px;" class="bgcolor1">
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="removeSong1" onclick="onRemove(this.id.substring(10) - 1)" src="remove.png" alt="Remove" title="Remove"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="up1" onclick="onUp(this.id.substring(2) - 1)" src="up.png" alt="Up" title="Up"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="down1" onclick="onDown(this.id.substring(4) - 1)" src="down.png" alt="Down" title="Down"></a></td>
+
+            <td class="bgcolor2" style="padding-left: 0.1em"><input type="checkbox" class="checkbox" id="songIndex1"></td>
+            <td style="padding-right:0.25em"></td>
+
+            
+
+            <td style="padding-right:1.25em">
+                <img id="currentImage1" src="current.png" alt="" style="">
+                
+                        <a id="titleUrl1" href="javascript:noop()" title="Under the Red Cloud">Under the Red Cloud</a>
+                    
+            </td>
+
+            <td style="padding-right:1.25em"><a id="albumUrl1" target="main" href="artist.view?id=14&albumId=2651"><span id="album1" class="detail" title="Under the Red Cloud">Under the Red Cloud</span></a></td><td style="padding-right:1.25em"><a id="artistUrl1" target="main" href="artist.view?id=14"><span id="artist1" class="detail" title="Amorphis">Amorphis</span></a></td><td style="padding-right:1.25em"><span id="year1" class="detail">2015</span></td><td style="padding-right:1.25em"><span id="format1" class="detail">mp3</span></td><td style="padding-right:1.25em;text-align:right;"><span id="fileSize1" class="detail">13,0 MB</span></td><td style="padding-right:1.25em;text-align:right;"><span id="duration1" class="detail">5:33</span></td><td style="padding-right:0.25em"><span id="bitRate1" class="detail">320 Kbps</span></td>
+        </tr><tr id="pattern2" style="margin: 0px; padding: 0px; border: 0px;" class="bgcolor2">
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="removeSong2" onclick="onRemove(this.id.substring(10) - 1)" src="remove.png" alt="Remove" title="Remove"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="up2" onclick="onUp(this.id.substring(2) - 1)" src="up.png" alt="Up" title="Up"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="down2" onclick="onDown(this.id.substring(4) - 1)" src="down.png" alt="Down" title="Down"></a></td>
+
+            <td class="bgcolor2" style="padding-left: 0.1em"><input type="checkbox" class="checkbox" id="songIndex2"></td>
+            <td style="padding-right:0.25em"></td>
+
+            
+
+            <td style="padding-right:1.25em">
+                <img id="currentImage2" src="current.png" alt="" style="display:none">
+                
+                        <a id="titleUrl2" href="javascript:noop()" title="The Four Wise Ones">The Four Wise Ones</a>
+                    
+            </td>
+
+            <td style="padding-right:1.25em"><a id="albumUrl2" target="main" href="artist.view?id=14&albumId=2651"><span id="album2" class="detail" title="Under the Red Cloud">Under the Red Cloud</span></a></td><td style="padding-right:1.25em"><a id="artistUrl2" target="main" href="artist.view?id=14"><span id="artist2" class="detail" title="Amorphis">Amorphis</span></a></td><td style="padding-right:1.25em"><span id="year2" class="detail">2015</span></td><td style="padding-right:1.25em"><span id="format2" class="detail">mp3</span></td><td style="padding-right:1.25em;text-align:right;"><span id="fileSize2" class="detail">11,0 MB</span></td><td style="padding-right:1.25em;text-align:right;"><span id="duration2" class="detail">4:40</span></td><td style="padding-right:0.25em"><span id="bitRate2" class="detail">320 Kbps</span></td>
+        </tr><tr id="pattern3" style="margin: 0px; padding: 0px; border: 0px;" class="bgcolor1">
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="removeSong3" onclick="onRemove(this.id.substring(10) - 1)" src="remove.png" alt="Remove" title="Remove"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="up3" onclick="onUp(this.id.substring(2) - 1)" src="up.png" alt="Up" title="Up"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="down3" onclick="onDown(this.id.substring(4) - 1)" src="down.png" alt="Down" title="Down"></a></td>
+
+            <td class="bgcolor2" style="padding-left: 0.1em"><input type="checkbox" class="checkbox" id="songIndex3"></td>
+            <td style="padding-right:0.25em"></td>
+
+            
+
+            <td style="padding-right:1.25em">
+                <img id="currentImage3" src="current.png" alt="" style="display:none">
+                
+                        <a id="titleUrl3" href="javascript:noop()" title="Bad Blood">Bad Blood</a>
+                    
+            </td>
+
+            <td style="padding-right:1.25em"><a id="albumUrl3" target="main" href="artist.view?id=14&albumId=2651"><span id="album3" class="detail" title="Under the Red Cloud">Under the Red Cloud</span></a></td><td style="padding-right:1.25em"><a id="artistUrl3" target="main" href="artist.view?id=14"><span id="artist3" class="detail" title="Amorphis">Amorphis</span></a></td><td style="padding-right:1.25em"><span id="year3" class="detail">2015</span></td><td style="padding-right:1.25em"><span id="format3" class="detail">mp3</span></td><td style="padding-right:1.25em;text-align:right;"><span id="fileSize3" class="detail">12,6 MB</span></td><td style="padding-right:1.25em;text-align:right;"><span id="duration3" class="detail">5:23</span></td><td style="padding-right:0.25em"><span id="bitRate3" class="detail">320 Kbps</span></td>
+        </tr><tr id="pattern4" style="margin: 0px; padding: 0px; border: 0px;" class="bgcolor2">
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="removeSong4" onclick="onRemove(this.id.substring(10) - 1)" src="remove.png" alt="Remove" title="Remove"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="up4" onclick="onUp(this.id.substring(2) - 1)" src="up.png" alt="Up" title="Up"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="down4" onclick="onDown(this.id.substring(4) - 1)" src="down.png" alt="Down" title="Down"></a></td>
+
+            <td class="bgcolor2" style="padding-left: 0.1em"><input type="checkbox" class="checkbox" id="songIndex4"></td>
+            <td style="padding-right:0.25em"></td>
+
+            
+
+            <td style="padding-right:1.25em">
+                <img id="currentImage4" src="current.png" alt="" style="display:none">
+                
+                        <a id="titleUrl4" href="javascript:noop()" title="The Skull">The Skull</a>
+                    
+            </td>
+
+            <td style="padding-right:1.25em"><a id="albumUrl4" target="main" href="artist.view?id=14&albumId=2651"><span id="album4" class="detail" title="Under the Red Cloud">Under the Red Cloud</span></a></td><td style="padding-right:1.25em"><a id="artistUrl4" target="main" href="artist.view?id=14"><span id="artist4" class="detail" title="Amorphis">Amorphis</span></a></td><td style="padding-right:1.25em"><span id="year4" class="detail">2015</span></td><td style="padding-right:1.25em"><span id="format4" class="detail">mp3</span></td><td style="padding-right:1.25em;text-align:right;"><span id="fileSize4" class="detail">11,9 MB</span></td><td style="padding-right:1.25em;text-align:right;"><span id="duration4" class="detail">5:04</span></td><td style="padding-right:0.25em"><span id="bitRate4" class="detail">320 Kbps</span></td>
+        </tr><tr id="pattern5" style="margin: 0px; padding: 0px; border: 0px;" class="bgcolor1">
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="removeSong5" onclick="onRemove(this.id.substring(10) - 1)" src="remove.png" alt="Remove" title="Remove"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="up5" onclick="onUp(this.id.substring(2) - 1)" src="up.png" alt="Up" title="Up"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="down5" onclick="onDown(this.id.substring(4) - 1)" src="down.png" alt="Down" title="Down"></a></td>
+
+            <td class="bgcolor2" style="padding-left: 0.1em"><input type="checkbox" class="checkbox" id="songIndex5"></td>
+            <td style="padding-right:0.25em"></td>
+
+            
+
+            <td style="padding-right:1.25em">
+                <img id="currentImage5" src="current.png" alt="" style="display:none">
+                
+                        <a id="titleUrl5" href="javascript:noop()" title="Death of a King">Death of a King</a>
+                    
+            </td>
+
+            <td style="padding-right:1.25em"><a id="albumUrl5" target="main" href="artist.view?id=14&albumId=2651"><span id="album5" class="detail" title="Under the Red Cloud">Under the Red Cloud</span></a></td><td style="padding-right:1.25em"><a id="artistUrl5" target="main" href="artist.view?id=14"><span id="artist5" class="detail" title="Amorphis">Amorphis</span></a></td><td style="padding-right:1.25em"><span id="year5" class="detail">2015</span></td><td style="padding-right:1.25em"><span id="format5" class="detail">mp3</span></td><td style="padding-right:1.25em;text-align:right;"><span id="fileSize5" class="detail">12,3 MB</span></td><td style="padding-right:1.25em;text-align:right;"><span id="duration5" class="detail">5:14</span></td><td style="padding-right:0.25em"><span id="bitRate5" class="detail">320 Kbps</span></td>
+        </tr><tr id="pattern6" style="margin: 0px; padding: 0px; border: 0px;" class="bgcolor2">
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="removeSong6" onclick="onRemove(this.id.substring(10) - 1)" src="remove.png" alt="Remove" title="Remove"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="up6" onclick="onUp(this.id.substring(2) - 1)" src="up.png" alt="Up" title="Up"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="down6" onclick="onDown(this.id.substring(4) - 1)" src="down.png" alt="Down" title="Down"></a></td>
+
+            <td class="bgcolor2" style="padding-left: 0.1em"><input type="checkbox" class="checkbox" id="songIndex6"></td>
+            <td style="padding-right:0.25em"></td>
+
+            
+
+            <td style="padding-right:1.25em">
+                <img id="currentImage6" src="current.png" alt="" style="display:none">
+                
+                        <a id="titleUrl6" href="javascript:noop()" title="Sacrifice">Sacrifice</a>
+                    
+            </td>
+
+            <td style="padding-right:1.25em"><a id="albumUrl6" target="main" href="artist.view?id=14&albumId=2651"><span id="album6" class="detail" title="Under the Red Cloud">Under the Red Cloud</span></a></td><td style="padding-right:1.25em"><a id="artistUrl6" target="main" href="artist.view?id=14"><span id="artist6" class="detail" title="Amorphis">Amorphis</span></a></td><td style="padding-right:1.25em"><span id="year6" class="detail">2015</span></td><td style="padding-right:1.25em"><span id="format6" class="detail">mp3</span></td><td style="padding-right:1.25em;text-align:right;"><span id="fileSize6" class="detail">9,6 MB</span></td><td style="padding-right:1.25em;text-align:right;"><span id="duration6" class="detail">3:56</span></td><td style="padding-right:0.25em"><span id="bitRate6" class="detail">320 Kbps</span></td>
+        </tr><tr id="pattern7" style="margin: 0px; padding: 0px; border: 0px;" class="bgcolor1">
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="removeSong7" onclick="onRemove(this.id.substring(10) - 1)" src="remove.png" alt="Remove" title="Remove"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="up7" onclick="onUp(this.id.substring(2) - 1)" src="up.png" alt="Up" title="Up"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="down7" onclick="onDown(this.id.substring(4) - 1)" src="down.png" alt="Down" title="Down"></a></td>
+
+            <td class="bgcolor2" style="padding-left: 0.1em"><input type="checkbox" class="checkbox" id="songIndex7"></td>
+            <td style="padding-right:0.25em"></td>
+
+            
+
+            <td style="padding-right:1.25em">
+                <img id="currentImage7" src="current.png" alt="" style="display:none">
+                
+                        <a id="titleUrl7" href="javascript:noop()" title="Dark Path">Dark Path</a>
+                    
+            </td>
+
+            <td style="padding-right:1.25em"><a id="albumUrl7" target="main" href="artist.view?id=14&albumId=2651"><span id="album7" class="detail" title="Under the Red Cloud">Under the Red Cloud</span></a></td><td style="padding-right:1.25em"><a id="artistUrl7" target="main" href="artist.view?id=14"><span id="artist7" class="detail" title="Amorphis">Amorphis</span></a></td><td style="padding-right:1.25em"><span id="year7" class="detail">2015</span></td><td style="padding-right:1.25em"><span id="format7" class="detail">mp3</span></td><td style="padding-right:1.25em;text-align:right;"><span id="fileSize7" class="detail">12,1 MB</span></td><td style="padding-right:1.25em;text-align:right;"><span id="duration7" class="detail">5:08</span></td><td style="padding-right:0.25em"><span id="bitRate7" class="detail">320 Kbps</span></td>
+        </tr><tr id="pattern8" style="margin: 0px; padding: 0px; border: 0px;" class="bgcolor2">
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="removeSong8" onclick="onRemove(this.id.substring(10) - 1)" src="remove.png" alt="Remove" title="Remove"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="up8" onclick="onUp(this.id.substring(2) - 1)" src="up.png" alt="Up" title="Up"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="down8" onclick="onDown(this.id.substring(4) - 1)" src="down.png" alt="Down" title="Down"></a></td>
+
+            <td class="bgcolor2" style="padding-left: 0.1em"><input type="checkbox" class="checkbox" id="songIndex8"></td>
+            <td style="padding-right:0.25em"></td>
+
+            
+
+            <td style="padding-right:1.25em">
+                <img id="currentImage8" src="current.png" alt="" style="display:none">
+                
+                        <a id="titleUrl8" href="javascript:noop()" title="Enemy at the Gates">Enemy at the Gates</a>
+                    
+            </td>
+
+            <td style="padding-right:1.25em"><a id="albumUrl8" target="main" href="artist.view?id=14&albumId=2651"><span id="album8" class="detail" title="Under the Red Cloud">Under the Red Cloud</span></a></td><td style="padding-right:1.25em"><a id="artistUrl8" target="main" href="artist.view?id=14"><span id="artist8" class="detail" title="Amorphis">Amorphis</span></a></td><td style="padding-right:1.25em"><span id="year8" class="detail">2015</span></td><td style="padding-right:1.25em"><span id="format8" class="detail">mp3</span></td><td style="padding-right:1.25em;text-align:right;"><span id="fileSize8" class="detail">12,0 MB</span></td><td style="padding-right:1.25em;text-align:right;"><span id="duration8" class="detail">5:07</span></td><td style="padding-right:0.25em"><span id="bitRate8" class="detail">320 Kbps</span></td>
+        </tr><tr id="pattern9" style="margin: 0px; padding: 0px; border: 0px;" class="bgcolor1">
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="removeSong9" onclick="onRemove(this.id.substring(10) - 1)" src="remove.png" alt="Remove" title="Remove"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="up9" onclick="onUp(this.id.substring(2) - 1)" src="up.png" alt="Up" title="Up"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="down9" onclick="onDown(this.id.substring(4) - 1)" src="down.png" alt="Down" title="Down"></a></td>
+
+            <td class="bgcolor2" style="padding-left: 0.1em"><input type="checkbox" class="checkbox" id="songIndex9"></td>
+            <td style="padding-right:0.25em"></td>
+
+            
+
+            <td style="padding-right:1.25em">
+                <img id="currentImage9" src="current.png" alt="" style="display:none">
+                
+                        <a id="titleUrl9" href="javascript:noop()" title="Tree of Ages">Tree of Ages</a>
+                    
+            </td>
+
+            <td style="padding-right:1.25em"><a id="albumUrl9" target="main" href="artist.view?id=14&albumId=2651"><span id="album9" class="detail" title="Under the Red Cloud">Under the Red Cloud</span></a></td><td style="padding-right:1.25em"><a id="artistUrl9" target="main" href="artist.view?id=14"><span id="artist9" class="detail" title="Amorphis">Amorphis</span></a></td><td style="padding-right:1.25em"><span id="year9" class="detail">2015</span></td><td style="padding-right:1.25em"><span id="format9" class="detail">mp3</span></td><td style="padding-right:1.25em;text-align:right;"><span id="fileSize9" class="detail">10,9 MB</span></td><td style="padding-right:1.25em;text-align:right;"><span id="duration9" class="detail">4:36</span></td><td style="padding-right:0.25em"><span id="bitRate9" class="detail">320 Kbps</span></td>
+        </tr><tr id="pattern10" style="margin: 0px; padding: 0px; border: 0px;" class="bgcolor2">
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="removeSong10" onclick="onRemove(this.id.substring(10) - 1)" src="remove.png" alt="Remove" title="Remove"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="up10" onclick="onUp(this.id.substring(2) - 1)" src="up.png" alt="Up" title="Up"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="down10" onclick="onDown(this.id.substring(4) - 1)" src="down.png" alt="Down" title="Down"></a></td>
+
+            <td class="bgcolor2" style="padding-left: 0.1em"><input type="checkbox" class="checkbox" id="songIndex10"></td>
+            <td style="padding-right:0.25em"></td>
+
+            
+
+            <td style="padding-right:1.25em">
+                <img id="currentImage10" src="current.png" alt="" style="display:none">
+                
+                        <a id="titleUrl10" href="javascript:noop()" title="White Night">White Night</a>
+                    
+            </td>
+
+            <td style="padding-right:1.25em"><a id="albumUrl10" target="main" href="artist.view?id=14&albumId=2651"><span id="album10" class="detail" title="Under the Red Cloud">Under the Red Cloud</span></a></td><td style="padding-right:1.25em"><a id="artistUrl10" target="main" href="artist.view?id=14"><span id="artist10" class="detail" title="Amorphis">Amorphis</span></a></td><td style="padding-right:1.25em"><span id="year10" class="detail">2015</span></td><td style="padding-right:1.25em"><span id="format10" class="detail">mp3</span></td><td style="padding-right:1.25em;text-align:right;"><span id="fileSize10" class="detail">12,3 MB</span></td><td style="padding-right:1.25em;text-align:right;"><span id="duration10" class="detail">5:15</span></td><td style="padding-right:0.25em"><span id="bitRate10" class="detail">320 Kbps</span></td>
+        </tr><tr id="pattern11" style="margin: 0px; padding: 0px; border: 0px;" class="bgcolor1">
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="removeSong11" onclick="onRemove(this.id.substring(10) - 1)" src="remove.png" alt="Remove" title="Remove"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="up11" onclick="onUp(this.id.substring(2) - 1)" src="up.png" alt="Up" title="Up"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="down11" onclick="onDown(this.id.substring(4) - 1)" src="down.png" alt="Down" title="Down"></a></td>
+
+            <td class="bgcolor2" style="padding-left: 0.1em"><input type="checkbox" class="checkbox" id="songIndex11"></td>
+            <td style="padding-right:0.25em"></td>
+
+            
+
+            <td style="padding-right:1.25em">
+                <img id="currentImage11" src="current.png" alt="" style="display:none">
+                
+                        <a id="titleUrl11" href="javascript:noop()" title="Come the Spring (Bonus Track)">Come the Spring (Bonus Track)</a>
+                    
+            </td>
+
+            <td style="padding-right:1.25em"><a id="albumUrl11" target="main" href="artist.view?id=14&albumId=2651"><span id="album11" class="detail" title="Under the Red Cloud">Under the Red Cloud</span></a></td><td style="padding-right:1.25em"><a id="artistUrl11" target="main" href="artist.view?id=14"><span id="artist11" class="detail" title="Amorphis">Amorphis</span></a></td><td style="padding-right:1.25em"><span id="year11" class="detail">2015</span></td><td style="padding-right:1.25em"><span id="format11" class="detail">mp3</span></td><td style="padding-right:1.25em;text-align:right;"><span id="fileSize11" class="detail">8,2 MB</span></td><td style="padding-right:1.25em;text-align:right;"><span id="duration11" class="detail">3:27</span></td><td style="padding-right:0.25em"><span id="bitRate11" class="detail">320 Kbps</span></td>
+        </tr><tr id="pattern12" style="margin: 0px; padding: 0px; border: 0px;" class="bgcolor2">
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="removeSong12" onclick="onRemove(this.id.substring(10) - 1)" src="remove.png" alt="Remove" title="Remove"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="up12" onclick="onUp(this.id.substring(2) - 1)" src="up.png" alt="Up" title="Up"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="down12" onclick="onDown(this.id.substring(4) - 1)" src="down.png" alt="Down" title="Down"></a></td>
+
+            <td class="bgcolor2" style="padding-left: 0.1em"><input type="checkbox" class="checkbox" id="songIndex12"></td>
+            <td style="padding-right:0.25em"></td>
+
+            
+
+            <td style="padding-right:1.25em">
+                <img id="currentImage12" src="current.png" alt="" style="display:none">
+                
+                        <a id="titleUrl12" href="javascript:noop()" title="Winter’s Sleep (Bonus Track)">Winter’s Sleep (Bonus Track)</a>
+                    
+            </td>
+
+            <td style="padding-right:1.25em"><a id="albumUrl12" target="main" href="artist.view?id=14&albumId=2651"><span id="album12" class="detail" title="Under the Red Cloud">Under the Red Cloud</span></a></td><td style="padding-right:1.25em"><a id="artistUrl12" target="main" href="artist.view?id=14"><span id="artist12" class="detail" title="Amorphis">Amorphis</span></a></td><td style="padding-right:1.25em"><span id="year12" class="detail">2015</span></td><td style="padding-right:1.25em"><span id="format12" class="detail">mp3</span></td><td style="padding-right:1.25em;text-align:right;"><span id="fileSize12" class="detail">15,4 MB</span></td><td style="padding-right:1.25em;text-align:right;"><span id="duration12" class="detail">6:37</span></td><td style="padding-right:0.25em"><span id="bitRate12" class="detail">320 Kbps</span></td>
+        </tr><tr id="pattern" style="display:none;margin:0;padding:0;border:0">
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="removeSong" onclick="onRemove(this.id.substring(10) - 1)" src="remove.png" alt="Remove" title="Remove"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="up" onclick="onUp(this.id.substring(2) - 1)" src="up.png" alt="Up" title="Up"></a></td>
+            <td class="bgcolor2"><a href="javascript:noop()">
+                <img id="down" onclick="onDown(this.id.substring(4) - 1)" src="down.png" alt="Down" title="Down"></a></td>
+
+            <td class="bgcolor2" style="padding-left: 0.1em"><input type="checkbox" class="checkbox" id="songIndex"></td>
+            <td style="padding-right:0.25em"></td>
+
+            
+
+            <td style="padding-right:1.25em">
+                <img id="currentImage" src="current.png" alt="" style="display:none">
+                
+                        <a id="titleUrl" href="javascript:noop()">Title</a>
+                    
+            </td>
+
+            <td style="padding-right:1.25em"><a id="albumUrl" target="main"><span id="album" class="detail">Album</span></a></td><td style="padding-right:1.25em"><a id="artistUrl" target="main"><span id="artist" class="detail">Artist</span></a></td><td style="padding-right:1.25em"><span id="year" class="detail">Year</span></td><td style="padding-right:1.25em"><span id="format" class="detail">Format</span></td><td style="padding-right:1.25em;text-align:right;"><span id="fileSize" class="detail">Size</span></td><td style="padding-right:1.25em;text-align:right;"><span id="duration" class="detail">Duration</span></td><td style="padding-right:0.25em"><span id="bitRate" class="detail">Bit Rate</span></td>
+        </tr></tbody>
+</table>
+
+</body></html>

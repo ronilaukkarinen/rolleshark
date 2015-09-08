@@ -54,6 +54,27 @@ var handleError = function(task) {
 
 /* 
 
+BROWSERSYNC
+===========
+*/
+
+gulp.task('browsersync', function() {
+
+  var files = [
+    'tests/Subsonic.html',
+    'rolleshark.scss'
+  ];
+
+  browserSync.init(files, {
+    proxy: "rolleshark.dev",
+    browser: "Google Chrome",
+    notify: true
+  });
+
+});
+
+/* 
+
 STYLES
 ======
 */
@@ -75,9 +96,8 @@ gulp.task('styles', function() {
   .pipe(prefix('last 3 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4')) //adds browser prefixes (eg. -webkit, -moz, etc.)
   .pipe(minifycss({keepBreaks:false,keepSpecialComments:0,}))
   .pipe(gulp.dest('./'))
-  .pipe(reload({stream:true}));
+  .pipe(browserSync.stream());
   });
-
 
 /*
 
@@ -85,32 +105,6 @@ WATCH
 =====
 */
 
-gulp.task('setWatch', function() {
-  global.isWatching = true;
-});
-
-gulp.task('watch', ['setWatch'], function() {
+gulp.task('watch', ['browsersync'], function() {
   gulp.watch('rolleshark.scss', ['styles']);
-});
-
-/* 
-BUILD
-=====
-*/
-
-gulp.task('build', function(cb) {
-  runSequence('styles', cb);
-});
-
-/* 
-DEFAULT
-=======
-*/
-
-gulp.task('default', function(cb) {
-    runSequence(
-    'styles',
-    'watch',
-    cb
-    );
 });
