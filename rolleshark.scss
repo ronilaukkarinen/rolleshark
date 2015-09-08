@@ -19,7 +19,7 @@
 
 body, html {
 
-    .detailselected {
+    .detailSelected {
         display: none !important;
     }
 
@@ -107,16 +107,10 @@ input {
 
     table {
 
-            opacity: 0.5;
-            transition: all 0.55s;
-
         * {
             font-size: 0.9rem !important;
         }
-
-            &:hover {
-                opacity: 0.9;
-            }        
+    
     }
 
     td[style='white-space:nowrap;'] {
@@ -125,7 +119,16 @@ input {
         font-size: 0.8rem !important;
     }
 
+    #playlistBody {
+    opacity: 0.5;
+    transition: all 0.55s;
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
     td[style="padding-right:1.25em"], .bgcolor2 {
+
         line-height: 1.5 !important;
         font-size: 0.9rem !important;
 
