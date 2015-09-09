@@ -6,9 +6,9 @@ Designed to be the most beautiful Subsonic theme in the world.
 
 **Plese note:** This theme is not designed to be responsive and will not be because of the structure of the original Subsonic webview. For tablet and mobile use I recommend [Jamstash](http://beta.jamstash.com/), [Dsub for Android](https://play.google.com/store/apps/details?id=github.daneren2005.dsub&hl=en) and [iSub for iOS](https://itunes.apple.com/en/app/isub-music-streamer/id362920532?mt=8).
 
-![Screenshot (Subsonic powered by Fluid App)](https://raw.githubusercontent.com/ronilaukkarinen/rolleshark-subsonic-theme/master/screenshot-6.png "Screenshot")
+![Screenshot (Subsonic powered by Fluid App)](https://raw.githubusercontent.com/ronilaukkarinen/rolleshark-subsonic-theme/master/screenshots/screenshot-6.png "Screenshot")
 
-![Screenshot (Subsonic powered by Fluid App)](https://raw.githubusercontent.com/ronilaukkarinen/rolleshark-subsonic-theme/master/screenshot-5.png "Screenshot")
+![Screenshot (Subsonic powered by Fluid App)](https://raw.githubusercontent.com/ronilaukkarinen/rolleshark-subsonic-theme/master/screenshots/screenshot-5.png "Screenshot")
 
 A very quick yet functional Subsonic theme based on Sonic and inspired by Grooveshark UI. Icon-edits and CSS by me.
 
