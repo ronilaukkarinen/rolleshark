@@ -19,6 +19,8 @@
 
 body, html {
 
+    overflow: hidden !important;
+
     .detailSelected {
         line-height: auto !important;
     }
