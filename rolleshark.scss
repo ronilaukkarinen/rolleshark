@@ -17,9 +17,11 @@
 @import 'sonic';
 @import 'typography';
 
-body, html {
+::-webkit-scrollbar { 
+    display: none !important; 
+}
 
-    overflow: hidden !important;
+body, html {
 
     .detailSelected {
         line-height: auto !important;
