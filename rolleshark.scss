@@ -17,11 +17,19 @@
 @import 'sonic';
 @import 'typography';
 
-::-webkit-scrollbar { 
-    display: none !important; 
-}
-
 body, html {
+
+    ::-webkit-scrollbar { 
+        display: none !important; 
+    }
+
+    &.playlistframe {
+
+        ::-webkit-scrollbar { 
+            display: none !important; 
+        }
+
+    }
 
     &.rightframe {
         overflow: hidden;
