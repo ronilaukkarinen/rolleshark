@@ -1137,3 +1137,8 @@ a[rel='zoom'] {
         margin-top: 10px;
     }
 }
+
+img[src='icons/rolleshark/ratingOn.png'], img[src='ratingOn.png'], img[src='icons/rolleshark/ratingOff.png'], img[src='ratingOff.png'] {
+    position: relative;
+    z-index: 100;
+}
