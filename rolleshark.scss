@@ -19,16 +19,37 @@
 
 body, html {
 
-    ::-webkit-scrollbar { 
-        display: none !important; 
+    ::-webkit-scrollbar
+    {
+        position: relative;
+        top: 6px;
+        float: right;
+        width: 3px;
+        height: 166px;
+        border: 0;
+        border-radius: 3px;
+        background-color: transparent;
+        background-clip: padding-box;
     }
-
-    &.playlistframe {
-
-        ::-webkit-scrollbar { 
-            display: none !important; 
-        }
-
+    ::-webkit-scrollbar-track
+    {
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb
+    {
+        position: relative;
+        top: 3px;
+        float: right;
+        width: 3px;
+        height: 166px;
+        border: 0;
+        border-radius: 3px;
+        background-color: rgb(204, 204, 204);
+        background-clip: padding-box;
+    }
+    ::-webkit-scrollbar-thumb:window-inactive
+    {
+        background: rgba(#cccccc, .2);
     }
 
     &.rightframe {
@@ -37,6 +58,27 @@ body, html {
 
     .detailSelected {
         line-height: auto !important;
+    }
+
+    ::-webkit-scrollbar, 
+    ::-webkit-scrollbar-track, 
+    ::-webkit-scrollbar-thumb, 
+    ::-webkit-scrollbar-thumb:window-inactive {
+        background: transparent;
+        transition: all 0.55s;
+    }
+
+    iframe, frame, frameset {
+        transition: all 0.55s
+    }
+
+    &:hover, &:focus, iframe:focus, frame:focus, iframe:hover, frame:focus, frameset:focus, frameset:hover {
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(204, 204, 204);
+            transition: all 0.55s;
+        }
+
     }
 
     div[style='float:left;padding-left:10px;padding-bottom:15px'] {
@@ -498,25 +540,6 @@ label,
 p
 {
     color: #696969;
-}
-
-::-webkit-scrollbar
-{
-    width: 12px;
-    height: 12px;
-}
-::-webkit-scrollbar-track
-{
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb
-{
-    border-radius: 10px;
-    background: rgba(200, 200, 200, .4);
-}
-::-webkit-scrollbar-thumb:window-inactive
-{
-    background: rgba(200, 200, 200, .2);
 }
 
 #bio0
