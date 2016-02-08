@@ -50,9 +50,9 @@ body, html {
         background: rgba(#cccccc, .2);
     }
 
-    ::-webkit-scrollbar, 
-    ::-webkit-scrollbar-track, 
-    ::-webkit-scrollbar-thumb, 
+    ::-webkit-scrollbar,
+    ::-webkit-scrollbar-track,
+    ::-webkit-scrollbar-thumb,
     ::-webkit-scrollbar-thumb:window-inactive {
         background: transparent;
         transition: all 0.55s;
@@ -178,7 +178,7 @@ input {
         * {
             font-size: 0.9rem !important;
         }
-    
+
     }
 
     td[style='white-space:nowrap;'] {
@@ -247,11 +247,11 @@ The commented
 /* ALBUM BROWSER VIEW: */
 
 /* ------- jewel case: ------- */
-/* .outerpair2 { background: url(../icons/rolleshark/jewel.png) 0 0 no-repeat !important; width: 90px; height: 82px; } .innerbox img { width: 72px; height: 72px; top: 3px; 
+/* .outerpair2 { background: url(../icons/rolleshark/jewel.png) 0 0 no-repeat !important; width: 90px; height: 82px; } .innerbox img { width: 72px; height: 72px; top: 3px;
 left: 12px; }
 */
 /* ------- compact disk ------- */
-/* .outerpair2 { background: url(../icons/rolleshark/cd.png) 0 0 no-repeat !important; width: 86px; height: 86px; } .innerbox img { width: 82px; height: 82px; top: 0px; left: 
+/* .outerpair2 { background: url(../icons/rolleshark/cd.png) 0 0 no-repeat !important; width: 86px; height: 86px; } .innerbox img { width: 82px; height: 82px; top: 0px; left:
 0px; }
 */
 /* ------- vinyl ------- */
@@ -266,14 +266,14 @@ left: 12px; }
 .outerpair2
 {
     width: 200px;
-    height: 160px; 
+    height: 160px;
 
     background: url(../icons/rolleshark/vinyl_large5.png) 0 0 no-repeat !important;
 }
 .outerpair1 .innerbox img
 {
     top: 2px;
-    left: 2px; 
+    left: 2px;
 
     width: 149px;
     height: 149px;
@@ -286,25 +286,25 @@ html body.mainframe div div div .detail[style='float: right; padding-right: 10px
 /* RIGHT SIDEBAR "NOW PLAYING" VIEW: */
 
 /* ------- jewel case ------- */
-/*.rightframe #nowPlaying a[rel=zoom] { background: url(../icons/rolleshark/jewel.png) 0 0 no-repeat !important; width: 90px; height: 82px; } .rightframe #nowPlaying 
+/*.rightframe #nowPlaying a[rel=zoom] { background: url(../icons/rolleshark/jewel.png) 0 0 no-repeat !important; width: 90px; height: 82px; } .rightframe #nowPlaying
 a[rel=zoom] img { width: 72px; height: 72px; top: 3px; left: 12px; }
 */
 /* ------- compact disk ------- */
-/*.rightframe #nowPlaying a[rel=zoom] { background: url(../icons/rolleshark/cd.png) 0 0 no-repeat !important; width: 86px; height: 86px; } .rightframe #nowPlaying a[rel=zoom] 
+/*.rightframe #nowPlaying a[rel=zoom] { background: url(../icons/rolleshark/cd.png) 0 0 no-repeat !important; width: 86px; height: 86px; } .rightframe #nowPlaying a[rel=zoom]
 img { width: 82px; height: 82px; top: 0px; left: 0px; }
 */
 /* ------- vinyl ------- */
 .rightframe #nowPlaying a[rel=zoom]
 {
     width: 96px;
-    height: 76px; 
+    height: 76px;
 
     background: url(../icons/rolleshark/vinyl.png) 0 0 no-repeat !important;
 } .rightframe #nowPlaying a[rel=zoom]
 img
 {
     top: 1px;
-    left: 2px; 
+    left: 2px;
 
     width: 72px;
     height: 72px;
@@ -313,7 +313,7 @@ img
 
 /*******************************************/
 
-/* Layout start -- preferably uneditable 
+/* Layout start -- preferably uneditable
    Old shieet mostly... but it works. */
 
 .logo img
@@ -1065,7 +1065,7 @@ body.mainframe form[action='/j_acegi_security_check']
 body.mainframe form div.bgcolor2[style='border:1px solid black; padding:20px 50px 20px 50px; margin-top:100px'],
 body.mainframe form div.bgcolor2[style='padding:20px 50px 20px 50px; margin-top:100px;margin-left:50px;margin-right:50px']
 {
-    padding: 20px 0 40px 0 !important; 
+    padding: 20px 0 40px 0 !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
 
@@ -1105,8 +1105,8 @@ body > div[style='width:15em;float:right;padding:0 1em 0 1em;border-left:1px sol
                 img
                 {
                     top: 2px;
-                    left: 2px; 
-            
+                    left: 2px;
+
                     width: 150px;
                     height: 150px;
                 }
@@ -1162,4 +1162,12 @@ a[rel='zoom'] {
 img[src='icons/rolleshark/ratingOn.png'], img[src='ratingOn.png'], img[src='icons/rolleshark/ratingOff.png'], img[src='ratingOff.png'] {
     position: relative;
     z-index: 100;
+}
+
+ul,
+ol,
+li,
+ul li,
+ol li {
+  list-style: none !important;
 }
