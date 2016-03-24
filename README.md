@@ -4,7 +4,7 @@ RolleShark
 Designed to be the most beautiful Subsonic theme in the world.
 --------------
 
-**Plese note:** This theme is not designed to be responsive and will not be because of the structure of the original Subsonic webview. For tablet and mobile use I recommend [Jamstash](http://beta.jamstash.com/), [Dsub for Android](https://play.google.com/store/apps/details?id=github.daneren2005.dsub&hl=en) and [iSub for iOS](https://itunes.apple.com/en/app/isub-music-streamer/id362920532?mt=8).
+**Please note:** This theme is not designed to be responsive and will not be because of the structure of the original Subsonic webview. For tablet and mobile use I recommend [Jamstash](http://beta.jamstash.com/), [Dsub for Android](https://play.google.com/store/apps/details?id=github.daneren2005.dsub&hl=en) and [iSub for iOS](https://itunes.apple.com/en/app/isub-music-streamer/id362920532?mt=8). Theme is NOT compatible with Subsonic 5! (see [#5](https://github.com/ronilaukkarinen/rolleshark/issues/5))
 
 ![Screenshot (Subsonic powered by Fluid App)](https://raw.githubusercontent.com/ronilaukkarinen/rolleshark-subsonic-theme/master/screenshots/screenshot-6.png "Screenshot")
 
@@ -19,7 +19,7 @@ Contains a lot of advanced CSS3, therefore works best on latest Google Chrome. C
 Prequisites
 --------------
 
-- Subsonic / musiccabinet
+- Subsonic / musiccabinet < v5
 - Sonic White -theme
 
 Best compatibility
