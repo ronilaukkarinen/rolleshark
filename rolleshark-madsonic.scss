@@ -323,6 +323,28 @@ img[src="icons/default/rating_on.png"] {
   &.bgcolor1 {
     background: transparent !important;
 
+    .songYear {
+      line-height: 25px !important;
+      font-weight: 700 !important;
+      font-size: 2rem !important;
+      margin-top: 1rem !important;
+      display: block !important;
+      color: #222 !important;
+    }
+
+    .songSuration {
+      font-weight: 700 !important;
+      font-size: 1.3rem !important;
+      display: block !important;
+      color: #666 !important;
+    }
+
+    #topAlbumsDiv,
+    #artistBioTable,
+    #topTracksDiv {
+      border: 0 !important;
+    }
+
     .nowPlaying,
     #nowPlaying {
       background: transparent !important;
@@ -333,12 +355,15 @@ img[src="icons/default/rating_on.png"] {
         font-weight: 400 !important;
       }
 
-      #starred {
-        margin-right: 5px !important;
+      // No need for icons here
+      #starred,
+      #bookmarked {
+        display: none !important;
       }
 
-      .playingframe .songTitle {
-        font-size: 80% !important;
+      .songTitle,
+      #songTitle {
+        font-size: 1.5rem !important;
         color: #444 !important;
       }
     }
