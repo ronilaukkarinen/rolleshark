@@ -1,0 +1,249 @@
+/*
+ * This file is part of Madsonic.
+ *
+ *  Madsonic is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Madsonic is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with Madsonic.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ *  Copyright 2009-2016 (C) Sindre Mehus, Martin Karel
+ */
+
+body {
+    background-color: #F2F2F2;
+}
+
+#overlay {
+    width: 640px;
+    height: 360px;
+    position: absolute;
+    z-index: 1;
+    background-color: #000;
+    display: none;
+}
+
+#overlay_text {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 170px;
+    color: white;
+    display: none;
+}
+
+.mainframe #jwplayer_wrapper {
+    display: none;
+}
+
+#media_control {
+    display: none;
+    width: 640px;
+    height: 45px;
+    background-color: $color_bg_side;
+	padding-top: 10px;
+	padding-bottom: 15px;
+    margin-top: 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -moz-box-shadow: 0px 0px 3px 3px #D8D8D8;
+    -webkit-box-shadow: 0px 0px 3px 3px #D8D8D8;
+    box-shadow: 0px 0px 3px 3px #D8D8D8;
+    filter: alpha(opacity=95);
+    opacity: 0.95;
+}
+
+#media_control #progress_slider {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 0px;
+    padding-top: 2px;
+    width: 620px;
+    height: 1px;
+    display: none;
+}
+
+#media_control #placeholder {
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    /* width: 623px; */
+    height: 2px;
+}
+
+#media_control #volume_slider {
+    float:left;
+    margin-top: 11px;
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 90px;
+    height: 2px;
+}
+
+#media_control #play {
+    margin-left: 8px;
+    float: left;
+    width: 24px;
+    height: 24px;
+    background-image: url('../icons/video/dark/play.png');
+    cursor: pointer;
+}
+
+#media_control #pause {
+    display: none;
+    margin-left: 8px;
+    float: left;
+    width: 24px;
+    height: 24px;
+    background-image: url('../icons/video/dark/pause.png');
+    cursor: pointer;
+}
+
+#media_control #play:hover, #media_control #pause:hover {
+    opacity: 0.8;
+}
+
+#media_control #casticonactive {
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    margin-top: -5px;
+    display: none;
+    background-image: url('../icons/video/dark/cast_active.png');
+    cursor: pointer;
+}
+
+#media_control #casticonidle {
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    margin-top: -5px;
+    display: none;
+    background-image: url('../icons/video/dark/cast_idle.png');
+    cursor: pointer;
+}
+
+#media_control #audio_off {
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-left: 15px;
+    margin-top: -3px;
+    display: none;
+    background-image: url('../icons/video/dark/audio_off.png');
+    cursor: pointer;
+}
+
+#media_control #audio_on {
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-left: 15px;
+    margin-top: -3px;
+    display: block;
+    background-image: url('../icons/video/dark/audio_on.png');
+    cursor: pointer;
+}
+
+#media_control #progress {
+    font-size: 12px;
+    float: left;
+    color: #999;
+    margin-top: 4px;
+    margin-left: 10px;
+    display: block;
+}
+
+#media_control #format {
+    float: left;
+    color: #c4c4c4;
+    margin-top: 4px;
+    margin-left: 10px;
+    display: block;
+}
+
+#media_control  #duration {
+    float: left;
+    color: #c4c4c4;
+    margin-top: 4px;
+    margin-left: 10px;
+    display: block;
+}
+
+#media_control #bitrate_menu {
+    font-size: 12px;
+    float: left;
+    color: #000;
+    background-color: #eee;
+    display: block;
+    border: 1px solid #666;
+    padding: 4px 10px 4px 10px;
+}
+
+#media_control #share {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+    background-image: url('../icons/video/dark/share.png');
+    cursor: pointer;
+}
+
+#resize {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-top: 0px;
+    margin-left: 5px;
+    background-image: url('../icons/video/dark/resize.png');
+    cursor: pointer;
+}
+
+#media_control #download {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-top: -2px;
+    margin-left: 5px;
+    background-image: url('../icons/video/dark/download.png');
+    cursor: pointer;
+}
+
+#media_control #back {
+    padding-top: 5px;
+}
+
+#media_control  .ui-slider .ui-slider-handle {
+    width: 11px;
+    height: 11px;
+    cursor: pointer;
+}
+
+option {
+    background-color: #888;
+    color: #ffffff;
+}
+
+/*
+.ui-slider a {
+    outline:none;
+}
+*/
+
+.ui-slider {
+    cursor: pointer;
+}
+
+.ui-slider-handle:focus {
+    outline:none;
+}

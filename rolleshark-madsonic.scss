@@ -1,0 +1,481 @@
+// Subsonic/Macsonic CSS for the 'Rolleshark' theme. Based on Sonic White. Inspired by Grooveshark.
+// Author: Roni 'Rolle' Laukkarinen (roni@dude.fi)
+// Lots of ugly !important, I'm afraid - blame bad UI design by Subsonic ;)
+
+@import 'madsonic/imports/config';
+@import 'madsonic/imports/default';
+@import 'madsonic/imports/madsonic_default';
+@import 'madsonic/imports/playericons';
+@import 'jeet/scss/jeet/index';
+
+// General
+form,
+label,
+table,
+a,
+p,
+.logo,
+a,
+body,
+form,
+h1,
+h1 a,
+h2,
+h2 a,
+label,
+table,
+.maincontrol a {
+  font-family: $font_stack !important;
+}
+
+// Main controls
+body {
+  .maincontrol {
+    a {
+      font-weight: 400;
+      color: #555;
+
+      &:hover {
+        color: #222 !important;
+      }
+    }
+  }
+
+  // Login splash
+  &.splash {
+    margin: 0;
+
+    img[src="icons/default/logo.png"] {
+      width: 170px;
+      height: 52px;
+      text-indent: -9999px;
+      overflow: hidden;
+      position: relative;
+      background-image: url('icons/rolleshark/logo.png');
+      background-repeat: no-repeat;
+      padding-right: 170px;
+      box-sizing: border-box;
+      cursor: default;
+    }
+
+    #startup {
+      font-size: 1.2rem;
+
+      input,
+      p,
+      table,
+      td,
+      * {
+        font-size: 1.2rem;
+        border-radius: 0;
+      }
+
+      table,
+      td,
+      p {
+        color: #fff;
+      }
+
+      .centered {
+        width: 100%;
+      }
+    }
+
+    form {
+      .loginsplash {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        border: 0 !important;
+        background: $color_bg_player !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        box-shadow: none !important;
+      }
+
+      input[type="submit"] {
+        width: auto !important;
+      }
+    }
+  }
+
+  // Main frame
+  &.mainframe {
+    &.bgcolor1 {
+
+      // Album list
+      a {
+        color: #9e9d99 !important;
+        font-weight: 400 !important;
+        transition: all .22s;
+
+        &:hover {
+          color: #222 !important;
+        }
+      }
+
+      .detail {
+        color: #777 !important;
+        font-size: .9rem !important;
+        font-weight: 400 !important;
+        margin-top: 5px !important;
+      }
+
+      .albumThumb {
+        padding-right: 40px !important;
+      }
+
+      // Vinyl covers
+      img[src="icons/default/test.png"] {
+        width: 200px !important;
+        height: 160px !important;
+        background: url('icons/rolleshark/vinyl_large5.png') no-repeat !important;
+        text-indent: -9999px !important;
+        overflow: hidden !important;
+        position: relative !important;
+        padding-right: 200px !important;
+        box-sizing: border-box !important;
+        opacity: 1 !important;
+        transition: all .55s !important;
+      }
+
+      img.dropshadow {
+        top: 2px !important;
+        left: 2px !important;
+        width: 149px !important;
+        height: 149px !important;
+        position: relative !important;
+      }
+
+      // Artist album view
+      div[style="width:308px; max-width:308px; height:308px; max-height:308px;"] {
+        img {
+          width: auto !important;
+          height: auto !important;
+        }
+      }
+    }
+  }
+}
+
+// Replace logo
+div[style="clear:both;position:absolute;top:15px;left:55px;"] {
+  img {
+    width: 170px;
+    height: 52px;
+    text-indent: -9999px;
+    overflow: hidden;
+    position: relative;
+    background-image: url('icons/rolleshark/logo.png');
+    padding-right: 170px;
+    box-sizing: border-box;
+    filter: invert(100%);
+    opacity: .7;
+    cursor: default;
+  }
+}
+
+// Buttons
+input[type=password],
+input[type=text],
+textarea {
+  font-family: $font_stack;
+  display: block;
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 11px 15px;
+  transition: border .15s linear 0s, box-shadow .15s linear 0s, color .15s linear 0s;
+  color: #777;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dedede;
+  box-shadow: 0 1px 3px rgba(#000, .1) inset;
+}
+
+input[type=password]:focus,
+input[type=text]:focus,
+textarea:focus {
+  color: #333;
+  border-color: #d11226;
+  outline: 0 none;
+  box-shadow: 0 1px 3px rgba(#000, .1) inset, 0 0 8px #d11226;
+}
+
+input[type=submit],
+input[type=button] {
+  font-family: $font_stack;
+  width: auto;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background .1s linear;
+  text-align: center;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  background: #dd2915;
+  box-shadow: inset 0 0 30px 0 rgba(#000, .15);
+}
+
+input[type=button]:hover,
+input[type=button]:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+  color: #fff;
+  background: #ee7f18;
+  box-shadow: inset 0 0 0 0 rgba(#000, 0);
+}
+
+// Hide premium ads
+a[href="premiumSettings.view"],
+img[src="icons/default/donate.png"],
+body.leftframe > div > div:nth-child(6) > table > tbody > tr:nth-child(2),
+#poweredby,
+img[src="icons/default/share_twitter.png"],
+img[src="icons/default/share_facebook.png"],
+img[src="icons/default/share_googleplus.png"] {
+  display: none !important;
+}
+
+// Default backgrounds
+.bgcolor2,
+.log,
+.ruleTableHeader {
+  background: $color_bg_default;
+}
+
+// Top frame
+#content_home > h2:nth-child(2) {
+  font-size: .7rem;
+}
+
+// Replace icons
+img[src="icons/default/current2.gif"] {
+  width: 10px;
+  height: 10px;
+  text-indent: -9999px;
+  overflow: hidden;
+  position: relative;
+  background-image: url('icons/rolleshark/eq_icon.gif');
+  padding-right: 10px;
+  box-sizing: border-box;
+  margin-right: 5px;
+}
+
+img[src="icons/default/remove.png"],
+img[alt="Remove"],
+img[title="Remove"] {
+  width: 18px;
+  height: 18px;
+  text-indent: -9999px;
+  overflow: hidden;
+  position: relative;
+  background-image: url('icons/rolleshark/remove.png');
+  background-repeat: no-repeat;
+  padding-right: 18px !important;
+  box-sizing: border-box;
+}
+
+img[src="icons/default/rating_off.png"] {
+  width: 12px;
+  height: 12px;
+  text-indent: -9999px;
+  overflow: hidden;
+  position: relative;
+  background-image: url('icons/rolleshark/rating_off.png');
+  padding-right: 12px !important;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+img[src="icons/default/rating_on.png"] {
+  width: 12px;
+  height: 12px;
+  text-indent: -9999px;
+  overflow: hidden;
+  position: relative;
+  background-image: url('icons/rolleshark/rating_on.png');
+  background-repeat: no-repeat;
+  padding-right: 12px !important;
+  box-sizing: border-box;
+}
+
+.detail {
+  font-size: .8rem !important;
+  color: #666 !important;
+
+  &:hover {
+    color: $color_links !important;
+  }
+}
+
+// Now playing box
+.bgcolor2 {
+  &#sidePanel {
+    background: $color_bg_nowplaying;
+    overflow: hidden !important;
+  }
+}
+
+.playingframe {
+  &.bgcolor1 {
+    background: transparent !important;
+
+    .nowPlaying,
+    #nowPlaying {
+      background: transparent !important;
+      padding: 1rem 0;
+
+      h1,
+      h2 {
+        font-weight: 400 !important;
+      }
+
+      #starred {
+        margin-right: 5px !important;
+      }
+
+      .playingframe .songTitle {
+        font-size: 80% !important;
+        color: #444 !important;
+      }
+    }
+
+    img[src="icons/default/bookmarkOff.png"],
+    img[src="icons/default/bookmarkOn.png"],
+    img.bookmarkSong {
+      margin-left: 5px !important;
+    }
+
+    a,
+    .accent {
+      color: #999 !important;
+
+      &:hover {
+        color: #222 !important;
+      }
+    }
+  }
+}
+
+// Table rows
+#content_main table.content tr:nth-of-type(odd),
+#playlistBody tr:nth-of-type(odd) {
+  background: rgba(#000, .03) !important;
+  border: 0 !important;
+}
+
+#content_main table.content tr:nth-of-type(even),
+#playlistBody tr:nth-of-type(even) {
+  background: rgba(#000, .01) !important;
+  border: 0 !important;
+}
+
+// Player
+.playlistframe {
+  margin: 0 !important;
+  background: $color_bg_playlistframe !important;
+
+  h2,
+  p {
+    padding: 1rem 0 0 1rem;
+  }
+
+  .fa {
+
+    &.fa-volume-up,
+    &.fa-fw,
+    &.fa-volume-off {
+      color: #bbb;
+    }
+  }
+
+  #progress-and-duration {
+    color: #aaa;
+
+    span {
+      color: #888;
+    }
+  }
+
+  a {
+    filter: invert(100%);
+    color: #333 !important;
+    font-size: .8rem;
+    transition: all .22s;
+
+    &:hover {
+      color: $color_links !important;
+      opacity: .5 !important;
+    }
+
+    &.ui-slider-handle {
+      filter: none !important;
+    }
+  }
+
+  #artistName {
+    color: #ccc;
+  }
+
+  #songName {
+    color: #999;
+  }
+
+  #playlistBody {
+    a {
+      filter: none !important;
+    }
+  }
+
+  div[style="position:fixed; bottom:0; width:100%; z-index:2"] {
+    background: $color_bg_player;
+    padding-left: 8px;
+  }
+}
+
+// Disable drop shadow effects
+.dropshadow {
+  box-shadow: none;
+}
+
+// Real cirlces
+.circle {
+  border-radius: 50% !important;
+}
+
+// Left frame
+.leftframe {
+  &.bgcolor2,
+  &.bgcolor {
+    background: $color_bg_side;
+
+    a[href="javascript:document.searchForm.submit()"],
+    img[alt="Search"] {
+      display: none !important;
+    }
+
+    input#query {
+      display: block;
+      height: 28px;
+      margin: 0 0 -15px;
+      padding: 0 22px 0 12px;
+      border: 1px solid #dadada;
+      border-radius: 15px;
+      background: #fff;
+    }
+  }
+
+  a,
+  a:link,
+  a:visited {
+    color: #777;
+    transition: all .22s;
+
+    &:hover {
+      color: #222;
+    }
+  }
+}

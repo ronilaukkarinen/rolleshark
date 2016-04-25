@@ -1,0 +1,203 @@
+// CSS stylesheet for the 'Madsonic Default' theme.
+@import 'default';
+@import 'scrollbar-px';
+@import url('//fonts.googleapis.com/css?family=Montserrat:100,200,400,700');
+
+@font-face {
+  font-family: 'noto';
+  src: url('fonts/NotoSans-Regular-webfont.eot');
+  src: url('fonts/NotoSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/NotoSans-Regular-webfont.woff') format('woff'), url('fonts/NotoSans-Regular-webfont.svg#noto400') format('svg'), url('fonts/NotoSans-Regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+form,
+label,
+table,
+a {
+  font-family: 'noto', sans-serif;
+}
+
+h2,
+h1,
+.logo {
+  font-family: 'noto', sans-serif;
+}
+
+h1 a,
+h2 a {
+  font-family: 'noto', sans-serif;
+  font-weight: bold;
+}
+
+.maincontrol a {
+  font-weight: bold;
+
+  img {
+    padding-bottom: 3px;
+    padding-right: 1px;
+    padding-left: 1px;
+  }
+}
+
+.leftpanel p.dense {
+  clear: both;
+  padding: 4px;
+  
+  line-height: 1.1em;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 400;
+  font-size: 8pt;
+}
+
+.album {
+  font-size: 9pt;
+  font-weight: 700;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+span.off {
+  background: #fff !important;
+}
+
+span.on {
+  background: #33b5e5 !important;
+  color: #fff !important;
+}
+
+span.off:hover {
+  background: #33b5e5 !important;
+  border: solid 1px #333 !important;
+}
+
+span.on:hover {
+  background: #44b5e5 !important;
+  border: solid 1px #333 !important;
+}
+
+span.off2 {
+  background: #333;
+  cursor: pointer;
+  float: left;
+  padding: 4px 9px;
+  margin: 2px;
+  color: #fff;
+  border-radius: 7px;
+  border: solid 1px #333;
+  transition-duration: .1s;
+  user-select: none;
+  white-space: nowrap;
+  font-size: 8pt;
+}
+
+span.on2 {
+  cursor: pointer;
+  float: left;
+  padding: 4px 9px;
+  margin: 2px;
+  background: #33b5e5;
+  color: #fff;
+  border-radius: 7px;
+  border: solid 1px #ccc;
+  transition-duration: .1s;
+  user-select: none;
+  white-space: nowrap;
+  font-size: 8pt;
+}
+
+span.on2:hover {
+  background: #33b5e5 !important;
+  border: solid 1px #444 !important;
+}
+
+span.off2:hover {
+  background: #000 !important;
+  border: solid 1px #444 !important;
+}
+
+table.music tr:nth-of-type(even) {
+  line-height: 30px;
+  background: rgba(0, 0, 0, .02);
+}
+
+table.music tr:nth-of-type(odd) {
+  line-height: 30px;
+  background: rgba(0, 0, 0, .04);
+}
+
+#content_main table.music tr {
+  line-height: 30px;
+  font-size: 1em;
+  border-bottom: 1px solid #ccc !important;
+}
+
+#content_main  table.content tr:nth-of-type(even) {
+  line-height: 30px;
+  background: rgba(0, 0, 0, .02);
+}
+
+#content_main  table.content tr:nth-of-type(odd) {
+  line-height: 30px;
+  background: rgba(0, 0, 0, .04);
+}
+
+#content_main  table th {
+  line-height: 30px;
+}
+
+#content_main  table tr {
+  border-bottom: 1px solid #ccc !important;
+}
+
+#playlistBody tr {
+  line-height: 30px;
+}
+
+#playlistBody tr:nth-of-type(even) {
+  line-height: 30px;
+  background: rgba(#000, .02);
+}
+
+#playlistBody tr:nth-of-type(odd) {
+  line-height: 30px;
+  background: rgba(#000, .04);
+}
+
+#startButton,
+#stopButton {
+  cursor: pointer;
+  font-size: 30px;
+  color: $color_links !important;
+}
+
+.playlistframe #progress,
+#progress-slider,
+#volume,
+#volume-slider {
+  background: #ccc !important;
+}
+
+.ui-slider-range-min {
+  background: $color_links !important;
+}
+
+.ui-slider .ui-slider-handle {
+  background: $color_links !important;
+}
+
+#cc-on,
+#cast-active {
+  color: $color_links !important;
+}
+
+#play,
+#pause,
+#buffer {
+  font-size: 24px !important;
+  color: $color_links !important;
+}

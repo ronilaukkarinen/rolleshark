@@ -1,0 +1,9 @@
+rolleshark "RolleShark"
+madsonic "Madsonic (Default)" 
+default "Madsonic (Default Light)" 
+madsonic_black "Madsonic (Black)" default 
+madsonic_dark "Madsonic (Dark)" default 
+madsonic_sunny "Madsonic (Sunny)" default
+xmas "Madsonic (XMAS-GREEN)"
+xmasred "Madsonic (XMAS-RED)"
+sigelmedia "Madsonic (SigelMedia)" default

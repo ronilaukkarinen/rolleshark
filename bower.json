@@ -1,9 +1,0 @@
-{
-  "name": "rolleshark",
-  "dependencies": {
-    "jeet": "*",
-    "sassline": "*",
-    "sass-rem": "*",
-    "typographic": "*"
-  }
-}

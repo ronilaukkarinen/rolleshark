@@ -35,6 +35,14 @@ git clone this repository, navigate to folder (`cd /path/to/files`) and run the 
 
 **Note: Might override other theme files, so use with care!**
 
+##### Madsonic 6.1:
+
+Last version tested: **20160419_madsonic-6.1.8220-standalone**.
+
+1. Run `sh install_macsonic.sh`
+2. Kill subsonic process and start it again
+3. Go to Settings and apply RolleShark
+
 ##### Subsonic (Vanilla) 5.2.1:
 
 1. Run `sh install_vanilla.sh`
