@@ -341,6 +341,7 @@ img[src="icons/default/rating_on.png"] {
       font-size: 1.3rem !important;
       display: block !important;
       color: #666 !important;
+      opacity: .6;
     }
 
     #topAlbumsDiv,
@@ -367,7 +368,7 @@ img[src="icons/default/rating_on.png"] {
 
       .songTitle,
       #songTitle {
-        font-size: 1.5rem !important;
+        font-size: 1rem !important;
         color: #444 !important;
       }
     }
