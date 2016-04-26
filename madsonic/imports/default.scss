@@ -108,7 +108,7 @@ a:hover * {
 }
 
 .accent {
-  color: #7b9db6;
+  color: $color_altcolor;
   font-weight: 700;
 }
 
@@ -198,7 +198,7 @@ p {
 .leftpanel p.dense {
   clear: both;
   padding: 4px;
-  
+
 
   /* text-shadow: 2px 2px #080808; */
   line-height: 1.1em;
@@ -467,7 +467,7 @@ img {
 /*
 .detailyear {
     white-space: nowrap;
-    color: #7B9DB6;
+    color: $color_altcolor;
     font-size: 11px;
     font-weight:700;
     font-family: consolas;

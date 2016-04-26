@@ -51,7 +51,7 @@ body {
       text-indent: -9999px;
       overflow: hidden;
       position: relative;
-      background-image: url('icons/rolleshark/logo.png');
+      background-image: url('/icons/rolleshark/logo.png');
       background-repeat: no-repeat;
       padding-right: 170px;
       box-sizing: border-box;
@@ -131,7 +131,7 @@ body {
       img[src="icons/default/test.png"] {
         width: 200px !important;
         height: 160px !important;
-        background: url('icons/rolleshark/vinyl_large5.png') no-repeat !important;
+        background: url('/icons/rolleshark/vinyl_large5.png') no-repeat !important;
         text-indent: -9999px !important;
         overflow: hidden !important;
         position: relative !important;
@@ -172,7 +172,7 @@ div[style="clear:both;position:absolute;top:15px;left:55px;"] {
     text-indent: -9999px;
     overflow: hidden;
     position: relative;
-    background-image: url('icons/rolleshark/logo.png');
+    background-image: url('/icons/rolleshark/logo.png');
     padding-right: 170px;
     box-sizing: border-box;
     filter: invert(100%);
@@ -245,6 +245,11 @@ td.ad {
   display: none !important;
 }
 
+// Remove empty spaces and other useless stuff
+div[style="height:94px"] {
+  display: none !important;
+}
+
 // Default backgrounds
 .bgcolor2,
 .log,
@@ -264,7 +269,7 @@ img[src="icons/default/current2.gif"] {
   text-indent: -9999px;
   overflow: hidden;
   position: relative;
-  background-image: url('icons/rolleshark/eq_icon.gif');
+  background-image: url('/icons/rolleshark/eq_icon.gif');
   padding-right: 10px;
   box-sizing: border-box;
   margin-right: 5px;
@@ -278,7 +283,7 @@ img[title="Remove"] {
   text-indent: -9999px;
   overflow: hidden;
   position: relative;
-  background-image: url('icons/rolleshark/remove.png');
+  background-image: url('/icons/rolleshark/remove.png');
   background-repeat: no-repeat;
   padding-right: 18px !important;
   box-sizing: border-box;
@@ -290,7 +295,7 @@ img[src="icons/default/rating_off.png"] {
   text-indent: -9999px;
   overflow: hidden;
   position: relative;
-  background-image: url('icons/rolleshark/rating_off.png');
+  background-image: url('/icons/rolleshark/rating_off.png');
   padding-right: 12px !important;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -302,7 +307,7 @@ img[src="icons/default/rating_on.png"] {
   text-indent: -9999px;
   overflow: hidden;
   position: relative;
-  background-image: url('icons/rolleshark/rating_on.png');
+  background-image: url('/icons/rolleshark/rating_on.png');
   background-repeat: no-repeat;
   padding-right: 12px !important;
   box-sizing: border-box;
@@ -326,15 +331,20 @@ img[src="icons/default/rating_on.png"] {
 }
 
 .playingframe {
+
+  // Controls
+  .ellipsis {
+    a {
+      opacity: .6 !important;
+
+      &:hover {
+        opacity: 1 !important;
+      }
+    }
+  }
+
   &.bgcolor1 {
     background: transparent !important;
-
-    #progress-slider,
-    #volume,
-    #volume-slider,
-    #progress {
-      background: #555 !important;
-    }
 
     .songYear {
       line-height: 25px !important;
@@ -342,7 +352,7 @@ img[src="icons/default/rating_on.png"] {
       font-size: 2rem !important;
       margin-top: 1rem !important;
       display: block !important;
-      color: #222 !important;
+      color: $color_altcolor !important;
     }
 
     .songSuration {
@@ -382,13 +392,6 @@ img[src="icons/default/rating_on.png"] {
       }
     }
 
-    img[src="icons/default/bookmarkOff.png"],
-    img[src="icons/default/bookmarkOn.png"],
-    img.bookmarkSong,
-    .controls.bookmarkSong {
-      margin-left: 5px !important;
-    }
-
     a,
     .accent {
       color: #999 !important;
@@ -417,6 +420,20 @@ img[src="icons/default/rating_on.png"] {
 .playlistframe {
   margin: 0 !important;
   background: $color_bg_playlistframe !important;
+
+  #progress-slider,
+  #volume,
+  #volume-slider,
+  #progress {
+    background: #555 !important;
+  }
+
+  img[src="icons/default/bookmarkOff.png"],
+  img[src="icons/default/bookmarkOn.png"],
+  img.bookmarkSong,
+  .controls.bookmarkSong {
+    margin-left: 5px !important;
+  }
 
   h2,
   p {
@@ -452,7 +469,12 @@ img[src="icons/default/rating_on.png"] {
     }
 
     &.ui-slider-handle {
+      opacity: 1 !important;
       filter: none !important;
+
+      &:hover {
+        color: lighten($color_links, 15%) !important;
+      }
     }
   }
 
@@ -462,6 +484,7 @@ img[src="icons/default/rating_on.png"] {
 
   #songName {
     color: #999;
+    font-weight: 400 !important;
   }
 
   #playlistBody {
@@ -504,7 +527,7 @@ img[src="icons/default/rating_on.png"] {
       padding: 0 22px 0 12px;
       border: 1px solid #dadada;
       border-radius: 15px;
-      background: #fff;
+      background: url('/icons/rolleshark/search.png') no-repeat right 7px #fff;
     }
   }
 
