@@ -239,7 +239,9 @@ body.leftframe > div > div:nth-child(6) > table > tbody > tr:nth-child(2),
 #poweredby,
 img[src="icons/default/share_twitter.png"],
 img[src="icons/default/share_facebook.png"],
-img[src="icons/default/share_googleplus.png"] {
+img[src="icons/default/share_googleplus.png"],
+.ad,
+td.ad {
   display: none !important;
 }
 
@@ -375,7 +377,8 @@ img[src="icons/default/rating_on.png"] {
 
     img[src="icons/default/bookmarkOff.png"],
     img[src="icons/default/bookmarkOn.png"],
-    img.bookmarkSong {
+    img.bookmarkSong,
+    .controls.bookmarkSong {
       margin-left: 5px !important;
     }
 
