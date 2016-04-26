@@ -23,14 +23,13 @@ Contains a lot of advanced CSS3, therefore works best on latest Google Chrome. C
 Prequisites
 --------------
 
-- Subsonic / musiccabinet < v5
-- Sonic White -theme
+- MusicCabinet 0.7.24c or MadSonic
 
 Best compatibility
 --------------
 
-- Window width 1470px or larger
 - MusicCabinet 0.7.24c
+- Madsonic 6.1
 
 Installation (Linux)
 --------------
