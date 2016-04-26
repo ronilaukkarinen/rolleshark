@@ -323,6 +323,11 @@ img[src="icons/default/rating_on.png"] {
 }
 
 // Now playing box
+.viewSelected {
+  background: none !important;
+  background-color: transparent !important;
+}
+
 .bgcolor2 {
   &#sidePanel {
     background: $color_bg_nowplaying;
@@ -331,10 +336,6 @@ img[src="icons/default/rating_on.png"] {
 }
 
 .playingframe {
-
-  .viewSelected {
-    background: none !important;
-  }
 
   // Controls
   .ellipsis {
