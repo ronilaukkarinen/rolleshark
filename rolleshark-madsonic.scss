@@ -332,6 +332,10 @@ img[src="icons/default/rating_on.png"] {
 
 .playingframe {
 
+  .viewSelected {
+    background: none !important;
+  }
+
   // Controls
   .ellipsis {
     a {
@@ -527,7 +531,7 @@ img[src="icons/default/rating_on.png"] {
       padding: 0 22px 0 12px;
       border: 1px solid #dadada;
       border-radius: 15px;
-      background: url('/icons/rolleshark/search.png') no-repeat right 7px #fff;
+      background: url('/icons/rolleshark/search.png') no-repeat 177px 7px #fff;
     }
   }
 
