@@ -329,6 +329,13 @@ img[src="icons/default/rating_on.png"] {
   &.bgcolor1 {
     background: transparent !important;
 
+    #progress-slider,
+    #volume,
+    #volume-slider,
+    #progress {
+      background: #555 !important;
+    }
+
     .songYear {
       line-height: 25px !important;
       font-weight: 700 !important;
