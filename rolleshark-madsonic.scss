@@ -134,6 +134,51 @@ body {
 
       .albumThumb {
         padding-right: 40px !important;
+
+        img[src="icons/default/addalbum.png"] {
+          width: 18px !important;
+          height: 18px !important;
+          text-indent: -9999px !important;
+          overflow: hidden !important;
+          position: relative !important;
+          background-image: url('/icons/rolleshark/add.png') !important;
+          background-repeat: no-repeat !important;
+          padding-right: 18px !important;
+          box-sizing: border-box !important;
+          cursor: pointer !important;
+          margin-top: 25px !important;
+          margin-left: 2px !important;
+        }
+
+        img[src="icons/default/playalbum.png"] {
+          width: 18px !important;
+          height: 18px !important;
+          text-indent: -9999px !important;
+          overflow: hidden !important;
+          position: relative !important;
+          background-image: url('/icons/rolleshark/play.png') !important;
+          background-repeat: no-repeat !important;
+          padding-right: 18px !important;
+          box-sizing: border-box !important;
+          cursor: pointer !important;
+          margin-top: 25px !important;
+          margin-left: 2px !important;
+        }
+
+        img[src="icons/default/toptrack.png"] {
+          width: 18px !important;
+          height: 18px !important;
+          text-indent: -9999px !important;
+          overflow: hidden !important;
+          position: relative !important;
+          background-image: url('/icons/rolleshark/up.png') !important;
+          background-repeat: no-repeat !important;
+          padding-right: 18px !important;
+          box-sizing: border-box !important;
+          cursor: pointer !important;
+          margin-top: 25px !important;
+          margin-left: 2px !important;
+        }
       }
 
       // Vinyl covers
