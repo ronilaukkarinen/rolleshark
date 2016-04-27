@@ -110,7 +110,8 @@ body {
         border-radius: 30px !important;
       }
 
-      img[src="icons/default/search.png"] {
+      img[title="Search"],
+      img[alt="Search"] {
         margin-top: -20px !important;
       }
 
