@@ -642,6 +642,11 @@ img[src="icons/default/rating_on.png"] {
   }
 }
 
+// Remove playqueue top border
+#playQueue {
+  border-top: 0 !important;
+}
+
 // Artist hub
 #content_artist {
   div[style="margin-top: 60px; padding: 0.20em 0.15em 0.15em 0.15em; z-index: 100"] {

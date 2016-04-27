@@ -8,6 +8,8 @@ Designed to be the most beautiful Subsonic theme in the world.
 
 ![Screenshot (Macsonic 6.1)](https://dl.dropboxusercontent.com/u/18447700/madsonic-rolleshark-fluid.png "Screenshot")
 
+![Screenshot (Macsonic 6.1)](https://dl.dropboxusercontent.com/u/18447700/madsonic-rolleshark-fluid-2.png "Screenshot")
+
 ![Screenshot (Subsonic powered by Fluid App)](https://raw.githubusercontent.com/ronilaukkarinen/rolleshark-subsonic-theme/master/screenshots/screenshot-6.png "Screenshot")
 
 ![Screenshot (Subsonic powered by Fluid App)](https://raw.githubusercontent.com/ronilaukkarinen/rolleshark-subsonic-theme/master/screenshots/screenshot-6.png "Screenshot")
