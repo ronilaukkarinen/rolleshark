@@ -547,3 +547,32 @@ img[src="icons/default/rating_on.png"] {
     }
   }
 }
+
+// Album/Artist view
+
+.content_main {
+  #artistBio {
+    max-width: 100% !important;
+    clear: both !important;
+    font-size: .8rem !important;
+    line-height: 1.4 !important;
+    margin-left: 0 !important;
+    color: #666 !important;
+  }
+
+  #placeholder {
+    margin-left: 0 !important;
+  }
+
+  #similarArtistsTitle {
+    font-size: 1rem !important;
+    margin-top: 20px !important;
+  }
+
+  #similarArtistsTitle,
+  #similarArtists {
+    display: block !important;
+    clear: both !important;
+    margin-left: 0 !important;
+  }
+}
