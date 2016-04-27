@@ -468,6 +468,10 @@ img[src="icons/default/rating_on.png"] {
     font-size: .8rem;
     transition: all .22s;
 
+    &#repeat_on {
+      filter: none !important;
+    }
+
     &:hover {
       color: $color_links !important;
       opacity: .5 !important;
