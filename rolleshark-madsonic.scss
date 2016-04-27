@@ -105,6 +105,15 @@ body {
   &.mainframe {
     &.bgcolor1 {
 
+      #query {
+        padding-left: 15px !important;
+        border-radius: 30px !important;
+      }
+
+      img[src="icons/default/search.png"] {
+        margin-top: -20px !important;
+      }
+
       // Remove starred icons in top navigation
       .content_home {
         h2 {
@@ -628,6 +637,7 @@ img[src="icons/default/rating_on.png"] {
       border: 1px solid #dadada;
       border-radius: 15px;
       background: url('/icons/rolleshark/search.png') no-repeat 177px 7px #fff;
+      margin-bottom: 5px !important;
     }
   }
 
