@@ -44,7 +44,7 @@ git clone this repository, navigate to folder (`cd /path/to/files`) and run the 
 
 Last version tested: **20160419_madsonic-6.1.8220-standalone**.
 
-1. Run `sh install_macsonic.sh`
+1. Run `sh install_madsonic.sh`
 2. Kill subsonic process and start it again
 3. Go to Settings and apply RolleShark
 
