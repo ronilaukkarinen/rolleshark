@@ -105,6 +105,15 @@ body {
   &.mainframe {
     &.bgcolor1 {
 
+      // Remove starred icons in top navigation
+      .content_home {
+        h2 {
+          img[src="icons/default/rating_on.png"] {
+            display: none !important;
+          }
+        }
+      }
+
       // Album list
       a {
         color: #9e9d99 !important;
@@ -594,6 +603,10 @@ img[src="icons/default/rating_on.png"] {
     line-height: 1.4 !important;
     margin-left: 0 !important;
     color: #666 !important;
+  }
+
+  #albumBio {
+    padding-top: 0 !important;
   }
 
   #placeholder {
