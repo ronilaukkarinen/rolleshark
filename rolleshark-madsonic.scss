@@ -720,3 +720,13 @@ img[src="icons/default/rating_on.png"] {
     }
   }
 }
+
+#castOff,
+#castOn {
+  filter: invert(100%) !important;
+  opacity: .6 !important;
+}
+
+#castOn {
+  opacity: 1 !important;
+}
