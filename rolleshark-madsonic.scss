@@ -6,7 +6,7 @@
 @import 'madsonic/imports/default';
 @import 'madsonic/imports/madsonic_default';
 @import 'madsonic/imports/playericons';
-@import 'jeet/scss/jeet/index';
+@import 'jeet/scss/jeet/jeet';
 
 // General
 form,
@@ -729,4 +729,9 @@ img[src="icons/default/rating_on.png"] {
 
 #castOn {
   opacity: 1 !important;
+}
+
+// Hide overflowing albums on single album view
+#content_main > table > tbody > tr > td:nth-child(3) {
+  display: none !important;
 }
